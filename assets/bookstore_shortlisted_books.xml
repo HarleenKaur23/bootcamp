@@ -1,0 +1,3381 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookstore>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>P. H. Newby</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Barry England</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nicholas Mosley</title>
+        <author>Impossible Object</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Iris Murdoch</title>
+        <author>The Nice and the Good</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Muriel Spark</title>
+        <author>The Public Image</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Gordon Williams</title>
+        <author>From Scenes Like These</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Bernice Rubens</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>A. L. Barker</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Elizabeth Bowen</title>
+        <author>Eva Trout</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Iris Murdoch</title>
+        <author>Bruno's Dream</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">William Trevor</title>
+        <author>Mrs Eckdorf in O'Neill's Hotel</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Terence Wheeler</title>
+        <author>The Conjunction</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>J. G. Farrell</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Nina Bawden</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shirley Hazzard</title>
+        <author>The Bay of Noon</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mary Renault</title>
+        <author>Fire From Heaven</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Muriel Spark</title>
+        <author>The Driver's Seat</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Patrick White</title>
+        <author>The Vivisector</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist[2]</title>
+        <author>Brian Aldiss</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">H. E. Bates</title>
+        <author>A Little of What You Fancy?</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Melvyn Bragg</title>
+        <author>A Place in England</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Christy Brown</title>
+        <author>Down All the Days</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Len Deighton</title>
+        <author>Bomber</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Elaine Feinstein</title>
+        <author>The Circle</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Reginald Hill</title>
+        <author>A Clubbable Woman</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Susan Hill</title>
+        <author>I'm the King of the Castle</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Francis King</title>
+        <author>A Domestic Animal</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Margaret Laurence</title>
+        <author>The Fire Dwellers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Lodge</title>
+        <author>Out of the Shelter</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Iris Murdoch</title>
+        <author>A Fairly Honourable Defeat</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shiva Naipaul</title>
+        <author>Fireflies</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Patrick O'Brian</title>
+        <author>Master and Commander</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Joe Orton</title>
+        <author>Head To Toe</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ruth Rendell</title>
+        <author>A Guilty Thing Surprised</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>V. S. Naipaul</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Thomas Kilroy</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Doris Lessing</title>
+        <author>Briefing for a Descent into Hell</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mordecai Richler</title>
+        <author>St. Urbain's Horseman</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Derek Robinson</title>
+        <author>Goshawk Squadron</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Elizabeth Taylor</title>
+        <author>Mrs. Palfrey at the Claremont</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>John Berger</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Susan Hill</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Thomas Keneally</title>
+        <author>The Chant of Jimmie Blacksmith</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Storey</title>
+        <author>Pasmore</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>J. G. Farrell</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Beryl Bainbridge</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Elizabeth Mavor</title>
+        <author>A Green Equinox</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Iris Murdoch</title>
+        <author>The Black Prince</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winners</title>
+        <author>Nadine Gordimer</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Stanley Middleton</title>
+        <author>Holiday</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Kingsley Amis</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Beryl Bainbridge</title>
+        <author>The Bottle Factory Outing</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">C. P. Snow</title>
+        <author>In Their Wisdom</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Ruth Prawer Jhabvala</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Thomas Keneally</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>David Storey</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>André Brink</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">R. C. Hutchinson</title>
+        <author>Rising</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Brian Moore</title>
+        <author>The Doctor's Wife</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Julian Rathbone</title>
+        <author>King Fisher Lives</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">William Trevor</title>
+        <author>The Children of Dynmouth</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Paul Scott</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Paul Bailey</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Caroline Blackwood</title>
+        <author>Great Granny Webster</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jennifer Johnston</title>
+        <author>Shadows on Our Skin</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Penelope Lively</title>
+        <author>The Road to Lichfield</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Barbara Pym</title>
+        <author>Quartet in Autumn</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Iris Murdoch</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Kingsley Amis</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">André Brink</title>
+        <author>Rumours of Rain</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Penelope Fitzgerald</title>
+        <author>The Bookshop</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jane Gardam</title>
+        <author>God on the Rocks</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Bernice Rubens</title>
+        <author>A Five-Year Sentence</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Penelope Fitzgerald</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Thomas Keneally</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">V. S. Naipaul</title>
+        <author>A Bend in the River</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Julian Rathbone</title>
+        <author>Joseph</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Fay Weldon</title>
+        <author>Praxis</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>William Golding</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Anthony Burgess</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">J. L. Carr</title>
+        <author>A Month in the Country</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anita Desai</title>
+        <author>Clear Light of Day</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alice Munro</title>
+        <author>The Beggar Maid</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Julia O'Faolain</title>
+        <author>No Country for Young Men</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Barry Unsworth</title>
+        <author>Pascali's Island</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Salman Rushdie</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Molly Keane</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Doris Lessing</title>
+        <author>The Sirian Experiments</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ian McEwan</title>
+        <author>The Comfort of Strangers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ann Schlee</title>
+        <author>Rhine Journey</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Muriel Spark</title>
+        <author>Loitering with Intent</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">D. M. Thomas</title>
+        <author>The White Hotel</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Thomas Keneally</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>John Arden</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">William Boyd</title>
+        <author>An Ice-Cream War</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Lawrence Durrell</title>
+        <author>Constance or Solitary Practices</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alice Thomas Ellis</title>
+        <author>The 27th Kingdom</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Timothy Mo</title>
+        <author>Sour Sweet</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>J. M. Coetzee</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Malcolm Bradbury</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">John Fuller</title>
+        <author>Flying to Nowhere</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anita Mason</title>
+        <author>The Illusionist</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Salman Rushdie</title>
+        <author>Shame</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Graham Swift</title>
+        <author>Waterland</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Anita Brookner</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>J. G. Ballard</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Julian Barnes</title>
+        <author>Flaubert's Parrot</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anita Desai</title>
+        <author>In Custody</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Penelope Lively</title>
+        <author>According to Mark</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Lodge</title>
+        <author>Small World</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner[3]</title>
+        <author>Keri Hulme</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Peter Carey</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">J. L. Carr</title>
+        <author>The Battle of Pollocks Crossing</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Doris Lessing</title>
+        <author>The Good Terrorist</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jan Morris</title>
+        <author>Last Letters from Hav</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Iris Murdoch</title>
+        <author>The Good Apprentice</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Kingsley Amis</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Margaret Atwood</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Paul Bailey</title>
+        <author>Gabriel's Lament</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Robertson Davies</title>
+        <author>What's Bred in the Bone</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Kazuo Ishiguro</title>
+        <author>An Artist of the Floating World</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Timothy Mo</title>
+        <author>An Insular Possession</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Penelope Lively</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Chinua Achebe</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Peter Ackroyd</title>
+        <author>Chatterton</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nina Bawden</title>
+        <author>Circles of Deceit</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Brian Moore</title>
+        <author>The Colour of Blood</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Iris Murdoch</title>
+        <author>The Book and the Brotherhood</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Peter Carey</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Bruce Chatwin</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Penelope Fitzgerald</title>
+        <author>The Beginning of Spring</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Lodge</title>
+        <author>Nice Work</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Salman Rushdie</title>
+        <author>The Satanic Verses</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Marina Warner</title>
+        <author>The Lost Father</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Kazuo Ishiguro</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Margaret Atwood</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">John Banville</title>
+        <author>The Book of Evidence</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sybille Bedford</title>
+        <author>Jigsaw</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">James Kelman</title>
+        <author>A Disaffection</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rose Tremain</title>
+        <author>Restoration</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>A. S. Byatt</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Beryl Bainbridge</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Penelope Fitzgerald</title>
+        <author>The Gate of Angels</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">John McGahern</title>
+        <author>Amongst Women</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Brian Moore</title>
+        <author>Lies of Silence</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mordecai Richler</title>
+        <author>Solomon Gursky Was Here</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Ben Okri</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Martin Amis</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Roddy Doyle</title>
+        <author>The Van</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rohinton Mistry</title>
+        <author>Such a Long Journey</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Timothy Mo</title>
+        <author>The Redundancy of Courage</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">William Trevor</title>
+        <author>Reading Turgenev[4]</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winners</title>
+        <author>Michael Ondaatje</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Barry Unsworth</title>
+        <author>Sacred Hunger</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Christopher Hope</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Patrick McCabe</title>
+        <author>The Butcher Boy</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ian McEwan</title>
+        <author>Black Dogs</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michèle Roberts</title>
+        <author>Daughters of the House</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Roddy Doyle</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Tibor Fischer</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michael Ignatieff</title>
+        <author>Scar Tissue</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Malouf</title>
+        <author>Remembering Babylon</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Caryl Phillips</title>
+        <author>Crossing the River</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Carol Shields</title>
+        <author>The Stone Diaries</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>James Kelman</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Romesh Gunesekera</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Abdulrazak Gurnah</title>
+        <author>Paradise</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alan Hollinghurst</title>
+        <author>The Folding Star</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">George Mackay Brown</title>
+        <author>Beside the Ocean of Time</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jill Paton Walsh</title>
+        <author>Knowledge of Angels</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Pat Barker</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Justin Cartwright</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Salman Rushdie</title>
+        <author>The Moor's Last Sigh</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Barry Unsworth</title>
+        <author>Morality Play</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tim Winton</title>
+        <author>The Riders</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Graham Swift</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Margaret Atwood</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Beryl Bainbridge</title>
+        <author>Every Man for Himself</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Seamus Deane</title>
+        <author>Reading in the Dark</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shena Mackay</title>
+        <author>The Orchard on Fire</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rohinton Mistry</title>
+        <author>A Fine Balance</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Arundhati Roy</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Jim Crace</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mick Jackson</title>
+        <author>The Underground Man</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Bernard MacLaverty</title>
+        <author>Grace Notes</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tim Parks</title>
+        <author>Europa</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Madeleine St John</title>
+        <author>The Essence of the Thing</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Ian McEwan</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Beryl Bainbridge</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Julian Barnes</title>
+        <author>England, England</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Martin Booth</title>
+        <author>The Industry of Souls</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Patrick McCabe</title>
+        <author>Breakfast on Pluto</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Magnus Mills</title>
+        <author>The Restraint of Beasts</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>J. M. Coetzee</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Anita Desai</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michael Frayn</title>
+        <author>Headlong</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Andrew O'Hagan</title>
+        <author>Our Fathers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ahdaf Soueif</title>
+        <author>The Map of Love</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Colm Tóibín</title>
+        <author>The Blackwater Lightship</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Margaret Atwood</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Trezza Azzopardi</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michael Collins</title>
+        <author>The Keepers of Truth</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Kazuo Ishiguro</title>
+        <author>When We Were Orphans</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Matthew Kneale</title>
+        <author>English Passengers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Brian O'Doherty</title>
+        <author>The Deposition of Father McGreevy</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Peter Carey</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Ian McEwan</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Andrew Miller</title>
+        <author>Oxygen</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Mitchell</title>
+        <author>number9dream</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rachel Seiffert</title>
+        <author>The Dark Room</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ali Smith</title>
+        <author>Hotel World</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Beryl Bainbridge</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Derek Beaven</title>
+        <author>If The Invader Comes</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Melvyn Bragg</title>
+        <author>A Son of War</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ciaran Carson</title>
+        <author>Shamrock Tea</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Stevie Davies</title>
+        <author>The Element of Water</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nadine Gordimer</title>
+        <author>The Pickup</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Patricia Grace</title>
+        <author>Dogside Story</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Abdulrazak Gurnah</title>
+        <author>By The Sea</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nick Hornby</title>
+        <author>How to Be Good</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Zvi Jagendorf</title>
+        <author>Wolfy and the Strudelbakers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">James Kelman</title>
+        <author>Translated Accounts</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Eoin McNamee</title>
+        <author>The Blue Tango</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ferdinand Mount</title>
+        <author>Fairness</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">VS Naipaul</title>
+        <author>Half a Life</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Philip Pullman</title>
+        <author>The Amber Spyglass</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Manil Suri</title>
+        <author>The Death of Vishnu</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jane Urquhart</title>
+        <author>The Stone Carvers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Marina Warner</title>
+        <author>The Leto Bundle</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Yann Martel</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Rohinton Mistry</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Carol Shields</title>
+        <author>Unless</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">William Trevor</title>
+        <author>The Story of Lucy Gault</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sarah Waters</title>
+        <author>Fingersmith</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tim Winton</title>
+        <author>Dirt Music</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Dannie Abse</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">John Banville</title>
+        <author>Shroud</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Joan Barfoot</title>
+        <author>Critical Injuries</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">William Boyd</title>
+        <author>Any Human Heart</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anita Brookner</title>
+        <author>The Next Big Thing</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Robert Edric</title>
+        <author>Peacetime</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michael Frayn</title>
+        <author>Spies</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Linda Grant</title>
+        <author>Still Here</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Philip Hensher</title>
+        <author>The Mulberry Empire</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Howard Jacobson</title>
+        <author>Who’s Sorry Now?</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jon McGregor</title>
+        <author>If Nobody Speaks of Remarkable Things</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Will Self</title>
+        <author>Dorian, an Imitation</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Zadie Smith</title>
+        <author>The Autograph Man</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Colin Thubron</title>
+        <author>To the Last City</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>DBC Pierre</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Monica Ali</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Margaret Atwood</title>
+        <author>Oryx and Crake</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Damon Galgut</title>
+        <author>The Good Doctor</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Zoë Heller</title>
+        <author>Notes on a Scandal</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Clare Morrall</title>
+        <author>Astonishing Splashes of Colour</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Martin Amis</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Carol Birch</title>
+        <author>Turn Again Home</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Melvyn Bragg</title>
+        <author>Crossing the Lines</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">J. M. Coetzee</title>
+        <author>Elizabeth Costello</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Julia Darling</title>
+        <author>The Taxi Driver’s Daughter</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Gerard Donovan</title>
+        <author>Schopenhauer’s Telescope</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Barbara Gowdy</title>
+        <author>The Romantic</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mark Haddon</title>
+        <author>The Curious Incident of the Dog in the Night-Time</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Francis King</title>
+        <author>The Nick of Time</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shena Mackay</title>
+        <author>Heligoland</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">John Murray</title>
+        <author>Jazz etc.</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Julie Myerson</title>
+        <author>Something Might Happen</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tim Parks</title>
+        <author>Judge Savage</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Caryl Phillips</title>
+        <author>A Distant Shore</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jonathan Raban</title>
+        <author>Waxwings</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Graham Swift</title>
+        <author>The Light of Day</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Barbara Trapido</title>
+        <author>Frankie &amp; Stankie</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Alan Hollinghurst</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Achmat Dangor</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sarah Hall</title>
+        <author>The Electric Michelangelo</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Mitchell</title>
+        <author>Cloud Atlas</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Colm Tóibín</title>
+        <author>The Master</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Gerard Woodward</title>
+        <author>I'll Go to Bed at Noon</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Chimamanda Ngozi Adichie</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nadeem Aslam</title>
+        <author>Maps for Lost Lovers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nicola Barker</title>
+        <author>Clear: A Transparent Novel</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">John Bemrose</title>
+        <author>The Island Walkers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ronan Bennett</title>
+        <author>Havoc, in Its Third Year</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Susanna Clarke</title>
+        <author>Jonathan Strange &amp; Mr Norrell</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Neil Cross</title>
+        <author>Always the Sun</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Louise Dean</title>
+        <author>Becoming Strangers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Lewis Desoto</title>
+        <author>A Blade of Grass</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">James Hamilton-Paterson</title>
+        <author>Cooking with Fernet Branca</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Justin Haythe</title>
+        <author>The Honeymoon</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shirley Hazzard</title>
+        <author>The Great Fire</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Gail Jones</title>
+        <author>Sixty Lights</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sam North</title>
+        <author>The Unnumbered</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nicholas Shakespeare</title>
+        <author>Snowleg</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Matt Thorne</title>
+        <author>Cherry</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>John Banville</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Julian Barnes</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sebastian Barry</title>
+        <author>A Long Long Way</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Kazuo Ishiguro</title>
+        <author>Never Let Me Go</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ali Smith</title>
+        <author>The Accidental</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Zadie Smith</title>
+        <author>On Beauty</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Tash Aw</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">J. M. Coetzee</title>
+        <author>Slow Man</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rachel Cusk</title>
+        <author>In the Fold</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Dan Jacobson</title>
+        <author>All For Love</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Marina Lewycka</title>
+        <author>A Short History of Tractors in Ukrainian</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Hilary Mantel</title>
+        <author>Beyond Black</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ian McEwan</title>
+        <author>Saturday</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">James Meek</title>
+        <author>The People’s Act of Love</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Salman Rushdie</title>
+        <author>Shalimar the Clown</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Harry Thompson</title>
+        <author>This Thing of Darkness</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">William Wall</title>
+        <author>This Is The Country</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Kiran Desai</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Kate Grenville</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">M. J. Hyland</title>
+        <author>Carry Me Down</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Hisham Matar</title>
+        <author>In the Country of Men</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Edward St Aubyn</title>
+        <author>Mother's Milk</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sarah Waters</title>
+        <author>The Night Watch</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Peter Carey</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Robert Edric</title>
+        <author>Gathering the Water</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nadine Gordimer</title>
+        <author>Get A Life</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Howard Jacobson</title>
+        <author>Kalooki Nights</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">James Lasdun</title>
+        <author>Seven Lies</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mary Lawson</title>
+        <author>The Other Side of the Bridge</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jon McGregor</title>
+        <author>So Many Ways to Begin</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Claire Messud</title>
+        <author>The Emperor’s Children</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Mitchell</title>
+        <author>Black Swan Green</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Naeem Murr</title>
+        <author>The Perfect Man</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Andrew O'Hagan</title>
+        <author>Be Near Me</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">James Robertson</title>
+        <author>The Testament of Gideon Mack</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Barry Unsworth</title>
+        <author>The Ruby in Her Navel</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Anne Enright</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Nicola Barker</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mohsin Hamid</title>
+        <author>The Reluctant Fundamentalist</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Lloyd Jones</title>
+        <author>Mister Pip</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ian McEwan</title>
+        <author>On Chesil Beach</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Indra Sinha</title>
+        <author>Animal's People</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Edward Docx</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Peter Ho Davies</title>
+        <author>The Welsh Girl</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nikita Lalwani</title>
+        <author>Gifted</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Catherine O'Flynn</title>
+        <author>What Was Lost</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michael Redhill</title>
+        <author>Consolation</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tan Twan Eng</title>
+        <author>The Gift of Rain</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">A. N. Wilson</title>
+        <author>Winnie &amp; Wolf</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Aravind Adiga</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Sebastian Barry</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Amitav Ghosh</title>
+        <author>Sea of Poppies</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Linda Grant</title>
+        <author>The Clothes on Their Backs</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Philip Hensher</title>
+        <author>The Northern Clemency</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Steve Toltz</title>
+        <author>A Fraction of the Whole</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Gaynor Arnold</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">John Berger</title>
+        <author>From A to X</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michelle de Kretser</title>
+        <author>The Lost Dog</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mohammed Hanif</title>
+        <author>A Case of Exploding Mangoes</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Joseph O'Neil</title>
+        <author>Netherland</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Salman Rushdie</title>
+        <author>The Enchantress of Florence</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tom Rob Smith</title>
+        <author>Child 44</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Hilary Mantel</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>A. S. Byatt</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">J. M. Coetzee</title>
+        <author>Summertime</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Adam Foulds</title>
+        <author>The Quickening Maze</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Simon Mawer</title>
+        <author>The Glass Room</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sarah Waters</title>
+        <author>The Little Stranger</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Sarah Hall</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Samantha Harvey</title>
+        <author>The Wilderness</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">James Lever</title>
+        <author>Me Cheeta</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ed O’Loughlin</title>
+        <author>Not Untrue &amp; Not Unkind</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">James Scudamore</title>
+        <author>Heliopolis</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Colm Tóibín</title>
+        <author>Brooklyn</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">William Trevor</title>
+        <author>Love and Summer</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Howard Jacobson</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Peter Carey</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Emma Donoghue</title>
+        <author>Room</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Damon Galgut</title>
+        <author>In a Strange Room</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Andrea Levy</title>
+        <author>The Long Song</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tom McCarthy</title>
+        <author>C</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Helen Dunmore</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Mitchell</title>
+        <author>The Thousand Autumns of Jacob de Zoet</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Lisa Moore</title>
+        <author>February</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Paul Murray</title>
+        <author>Skippy Dies</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rose Tremain</title>
+        <author>Trespass</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Christos Tsiolkas</title>
+        <author>The Slap</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alan Warner</title>
+        <author>The Stars in the Bright Sky</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Julian Barnes</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Carol Birch</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Patrick deWitt</title>
+        <author>The Sisters Brothers</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Esi Edugyan</title>
+        <author>Half-Blood Blues</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Stephen Kelman</title>
+        <author>Pigeon English</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">A D Miller</title>
+        <author>Snowdrops</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Sebastian Barry</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Yvvette Edwards</title>
+        <author>A Cupboard Full of Coats</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alan Hollinghurst</title>
+        <author>The Stranger’s Child</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Patrick McGuinness</title>
+        <author>The Last Hundred Days</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alison Pick</title>
+        <author>Far to Go</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jane Rogers</title>
+        <author>The Testament of Jessie Lamb</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">D. J. Taylor</title>
+        <author>Derby Day</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Hilary Mantel</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Deborah Levy</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alison Moore</title>
+        <author>The Lighthouse</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Will Self</title>
+        <author>Umbrella</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tan Twan Eng</title>
+        <author>The Garden of Evening Mists</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jeet Thayil</title>
+        <author>Narcopolis</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Nicola Barker</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ned Beauman</title>
+        <author>The Teleportation Accident</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">André Brink</title>
+        <author>Philida</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michael Frayn</title>
+        <author>Skios</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rachel Joyce</title>
+        <author>The Unlikely Pilgrimage of Harold Fry</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sam Thompson</title>
+        <author>Communion Town</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Eleanor Catton</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>NoViolet Bulawayo</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jim Crace</title>
+        <author>Harvest</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jhumpa Lahiri</title>
+        <author>The Lowland</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ruth Ozeki</title>
+        <author>A Tale for the Time Being</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Colm Tóibín</title>
+        <author>The Testament of Mary</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Tash Aw</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Eve Harris</title>
+        <author>The Marrying of Chani Kaufman</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Richard House</title>
+        <author>The Kills</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alison MacLeod</title>
+        <author>Unexploded</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Colum McCann</title>
+        <author>TransAtlantic</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Charlotte Mendelson</title>
+        <author>Almost English</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Donal Ryan</title>
+        <author>The Spinning Heart</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Richard Flanagan</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Joshua Ferris</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Karen Joy Fowler</title>
+        <author>We Are All Completely Beside Ourselves</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Howard Jacobson</title>
+        <author>J</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Neel Mukherjee</title>
+        <author>The Lives of Others</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ali Smith</title>
+        <author>How to Be Both</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Siri Hustvedt</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Paul Kingsnorth</title>
+        <author>The Wake</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Mitchell</title>
+        <author>The Bone Clocks</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Nicholls</title>
+        <author>Us</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Joseph O’Neill</title>
+        <author>The Dog</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Richard Powers</title>
+        <author>Orfeo</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Niall Williams</title>
+        <author>History of the Rain</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Marlon James</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[20]</title>
+        <author>Tom McCarthy</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Chigozie Obioma</title>
+        <author>The Fishermen</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sunjeev Sahota</title>
+        <author>The Year of the Runaways</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anne Tyler</title>
+        <author>A Spool of Blue Thread</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Hanya Yanagihara</title>
+        <author>A Little Life</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Bill Clegg</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anne Enright</title>
+        <author>The Green Road</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Laila Lalami</title>
+        <author>The Moor’s Account</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Andrew O'Hagan</title>
+        <author>The Illuminations</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Marilynne Robinson</title>
+        <author>Lila</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anuradha Roy</title>
+        <author>Sleeping on Jupiter</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anna Smaill</title>
+        <author>The Chimes</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Paul Beatty</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist</title>
+        <author>Deborah Levy</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Graeme Macrae Burnet</title>
+        <author>His Bloody Project</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ottessa Moshfegh</title>
+        <author>Eileen</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Szalay</title>
+        <author>All That Man Is</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Madeleine Thien</title>
+        <author>Do Not Say We Have Nothing</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>J. M. Coetzee</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">A.L. Kennedy</title>
+        <author>Serious Sweet</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ian McGuire</title>
+        <author>The North Water</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">David Means</title>
+        <author>Hystopia</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Wyl Menmuir</title>
+        <author>The Many</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Virginia Reeves</title>
+        <author>Work Like Any Other</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Elizabeth Strout</title>
+        <author>My Name Is Lucy Barton</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>George Saunders</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[22]</title>
+        <author>Paul Auster</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Emily Fridlund</title>
+        <author>History of Wolves</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mohsin Hamid</title>
+        <author>Exit West</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Fiona Mozley</title>
+        <author>Elmet</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Ali Smith</title>
+        <author>Autumn</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Sebastian Barry</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mike McCormack</title>
+        <author>Solar Bones</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jon McGregor</title>
+        <author>Reservoir 13</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Arundhati Roy</title>
+        <author>The Ministry of Utmost Happiness</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Kamila Shamsie</title>
+        <author>Home Fire</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Zadie Smith</title>
+        <author>Swing Time</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Colson Whitehead</title>
+        <author>The Underground Railroad</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Anna Burns</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[23]</title>
+        <author>Esi Edugyan</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Daisy Johnson</title>
+        <author>Everything Under</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rachel Kushner</title>
+        <author>The Mars Room</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Richard Powers</title>
+        <author>The Overstory</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Robin Robertson</title>
+        <author>The Long Take</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Belinda Bauer</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nick Drnaso</title>
+        <author>Sabrina</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Guy Gunaratne</title>
+        <author>In Our Mad And Furious City</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sophie Mackintosh</title>
+        <author>The Water Cure</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Michael Ondaatje</title>
+        <author>Warlight</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sally Rooney</title>
+        <author>Normal People</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Donal Ryan</title>
+        <author>From a Low and Quiet Sea</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winners[24][25]</title>
+        <author>Margaret Atwood</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Bernardine Evaristo</title>
+        <author>Girl, Woman, Other</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[26]</title>
+        <author>Lucy Ellmann</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Chigozie Obioma</title>
+        <author>An Orchestra of Minorities</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Salman Rushdie</title>
+        <author>Quichotte</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Elif Shafak</title>
+        <author>10 Minutes 38 Seconds in This Strange World</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Kevin Barry</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Oyinkan Braithwaite</title>
+        <author>My Sister, the Serial Killer</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">John Lanchester</title>
+        <author>The Wall</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Deborah Levy</title>
+        <author>The Man Who Saw Everything</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Valeria Luiselli</title>
+        <author>Lost Children Archive</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Max Porter</title>
+        <author>Lanny</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jeanette Winterson</title>
+        <author>Frankissstein</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Douglas Stuart</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[27][28]</title>
+        <author>Diane Cook</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tsitsi Dangarembga</title>
+        <author>This Mournable Body</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Avni Doshi</title>
+        <author>Burnt Sugar</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Maaza Mengiste</title>
+        <author>The Shadow King</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Brandon Taylor</title>
+        <author>Real Life</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist</title>
+        <author>Gabriel Krauze</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Hilary Mantel</title>
+        <author>The Mirror &amp; the Light[29]</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Colum McCann</title>
+        <author>Apeirogon</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Kiley Reid</title>
+        <author>Such a Fun Age</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anne Tyler</title>
+        <author>Redhead by the Side of the Road</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sophie Ward</title>
+        <author>Love and Other Thought Experiments</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">C Pam Zhang</title>
+        <author>How Much of These Hills Is Gold</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner[30]</title>
+        <author>Damon Galgut</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[31]</title>
+        <author>Anuk Arudpragasam</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Patricia Lockwood</title>
+        <author>No One Is Talking About This</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nadifa Mohamed</title>
+        <author>The Fortune Men</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Richard Powers</title>
+        <author>Bewilderment</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Maggie Shipstead</title>
+        <author>Great Circle</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist[32]</title>
+        <author>Rachel Cusk</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Nathan Harris</title>
+        <author>The Sweetness of Water</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Kazuo Ishiguro</title>
+        <author>Klara and the Sun</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Karen Jennings</title>
+        <author>An Island</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Mary Lawson</title>
+        <author>A Town Called Solace</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sunjeev Sahota</title>
+        <author>China Room</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Francis Spufford</title>
+        <author>Light Perpetual</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner</title>
+        <author>Shehan Karunatilaka</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[33]</title>
+        <author>NoViolet Bulawayo</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Percival Everett</title>
+        <author>The Trees</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Alan Garner</title>
+        <author>Treacle Walker</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Claire Keegan</title>
+        <author>Small Things Like These</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Elizabeth Strout</title>
+        <author>Oh William!</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist[34]</title>
+        <author>Graeme Macrae Burnet</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Hernan Diaz</title>
+        <author>Trust</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Karen Joy Fowler</title>
+        <author>Booth</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Audrey Magee</title>
+        <author>The Colony</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Maddie Mortimer</title>
+        <author>Maps of Our Spectacular Bodies</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Leila Mottley</title>
+        <author>Nightcrawling</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Selby Wynn Schwartz</title>
+        <author>After Sappho</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner[35]</title>
+        <author>Paul Lynch</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[36]</title>
+        <author>Sarah Bernstein</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Jonathan Escoffery</title>
+        <author>If I Survive You</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Paul Harding</title>
+        <author>This Other Eden</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Paul Murray</title>
+        <author>The Bee Sting</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Chetna Maroo</title>
+        <author>Western Lane</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist[37]</title>
+        <author>Ayobami Adebayo</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sebastian Barry</title>
+        <author>Old God's Time</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Elaine Feeney</title>
+        <author>How to Build a Boat</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Siân Hughes</title>
+        <author>Pearl</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Viktoria Lloyd-Barlow</title>
+        <author>All the Little Bird-Hearts</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Martin MacInnes</title>
+        <author>In Ascension</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tan Twan Eng</title>
+        <author>The House of Doors</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Winner[38]</title>
+        <author>Samantha Harvey</author>
+        <year>Winners,</year>
+        <prize_status>Winner</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Shortlist[39]</title>
+        <author>Percival Everett</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rachel Kushner</title>
+        <author>Creation Lake</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Anne Michaels</title>
+        <author>Held</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Yael van der Wouden</title>
+        <author>The Safekeep</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Charlotte Wood</title>
+        <author>Stone Yard Devotional</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Longlist[40]</title>
+        <author>Colin Barrett</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Rita Bullwinkel</title>
+        <author>Headshot</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Hisham Matar</title>
+        <author>My Friends</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Claire Messud</title>
+        <author>This Strange Eventful History</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Tommy Orange</title>
+        <author>Wandering Stars</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Sarah Perry</title>
+        <author>Enlightenment</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+    <book category="fiction">
+        <title lang="en">Richard Powers</title>
+        <author>Playground</author>
+        <year>Winners,</year>
+        <prize_status>Shortlisted</prize_status>
+    </book>
+</bookstore>
