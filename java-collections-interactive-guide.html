@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Java Collections — Interactive Guide</title>
+<style>
+:root{
+  --bg:#f6f7fb; --card:#ffffff; --ink:#172033; --muted:#5c6b84; --line:#e2e7f1;
+  --brand:#4f46e5; --brand2:#7c3aed; --accent:#f97316; --teal:#0f766e; --pink:#be185d;
+  --ok:#15803d; --okbg:#ecfdf5; --warn:#b45309; --warnbg:#fffbeb; --bad:#b91c1c; --badbg:#fef2f2;
+  --code:#0f172a; --codeink:#e2e8f0;
+  --radius:18px; --shadow:0 8px 28px rgba(15,23,42,.08);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:ui-sans-system,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+body.dark{--bg:#0b1020;--card:#131a2e;--ink:#e8edf7;--muted:#a8b3c7;--line:#263252;--okbg:#10351f;--warnbg:#3a2a0d;--badbg:#3a1414;--shadow:0 8px 28px rgba(0,0,0,.35)}
+a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+code.inline{background:#eef2ff;color:#3730a3;padding:.12rem .38rem;border-radius:6px;font-size:.9em;font-family:ui-monospace,Consolas,monospace}
+body.dark code.inline{background:#232b4d;color:#c7d2fe}
+pre{margin:0;overflow:auto;background:var(--code);color:var(--codeink);border-radius:12px;padding:16px;font-size:.88rem;line-height:1.55;font-family:ui-monospace,Consolas,monospace}
+pre .k{color:#c084fc} pre .s{color:#86efac} pre .c{color:#94a3b8;font-style:italic} pre .n{color:#fca5a5}
+.progress-wrap{position:fixed;top:0;left:0;right:0;height:5px;z-index:60;background:transparent}
+#progress{height:100%;width:0;background:linear-gradient(90deg,var(--brand),var(--accent))}
+/* Hero */
+.hero{background:radial-gradient(1000px 500px at 85% -10%,#f59e0b66,transparent 60%),linear-gradient(135deg,#312e81,#4f46e5 45%,#7c3aed);color:#fff;padding:52px 20px 44px}
+.hero-in{max-width:1180px;margin:auto}
+.badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:999px;font-size:.82rem;font-weight:700;letter-spacing:.04em}
+.hero h1{margin:14px 0 8px;font-size:clamp(2rem,5vw,3.4rem);line-height:1.08}
+.hero p.lead{font-size:1.13rem;max-width:820px;opacity:.94;margin:0 0 20px}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+.stat{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:12px 16px;min-width:150px}
+.stat b{display:block;font-size:1.35rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{appearance:none;border:0;cursor:pointer;border-radius:999px;padding:10px 18px;font-weight:700;font-size:.95rem;display:inline-flex;align-items:center;gap:7px;transition:transform .12s,opacity .12s}
+.btn:active{transform:scale(.97)}
+.btn-light{background:#fff;color:#3730a3}.btn-ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.btn-brand{background:var(--brand);color:#fff}.btn-accent{background:var(--accent);color:#fff}.btn-teal{background:var(--teal);color:#fff}
+.btn-outline{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-sm{padding:7px 13px;font-size:.88rem}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+/* Layout */
+.layout{max-width:1180px;margin:0 auto;padding:22px 16px 60px;display:grid;grid-template-columns:255px 1fr;gap:22px;align-items:start}
+.toc{position:sticky;top:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+.toc h3{margin:2px 0 10px;font-size:.92rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.toc a{display:block;padding:6.5px 10px;border-radius:9px;color:var(--ink);font-size:.93rem;font-weight:550}
+.toc a:hover{background:#eef2ff;text-decoration:none} body.dark .toc a:hover{background:#232b4d}
+.toc a.active{background:var(--brand);color:#fff}
+.toc .tools{display:grid;gap:8px;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+main{min-width:0}
+section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px;margin-bottom:22px;scroll-margin-top:18px}
+.eyebrow{display:inline-block;font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);background:#eef2ff;padding:4px 10px;border-radius:999px;margin-bottom:8px}
+body.dark .eyebrow{background:#232b4d;color:#c7d2fe}
+h2{font-size:1.65rem;margin:4px 0 8px;line-height:1.25} h3{font-size:1.18rem;margin:22px 0 8px} h4{margin:16px 0 6px;font-size:1.02rem}
+p{margin:8px 0} .muted{color:var(--muted)} .small{font-size:.9rem}
+.big-idea{border-left:6px solid var(--accent);background:#fff7ed;border-radius:0 14px 14px 0;padding:14px 18px;font-size:1.05rem;margin:16px 0}
+body.dark .big-idea{background:#2a1c0d}
+.grid{display:grid;gap:14px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{border:1.5px solid var(--line);border-radius:14px;padding:16px;background:var(--card)}
+.card h4{margin-top:2px}.icon{font-size:1.6rem;line-height:1}
+.callout{border-radius:14px;padding:15px 17px;margin:14px 0;border:1.5px solid}
+.callout.ok{background:var(--okbg);border-color:#86efac}.callout.warn{background:var(--warnbg);border-color:#fcd34d}.callout.bad{background:var(--badbg);border-color:#fca5a5}.callout.info{background:#eff6ff;border-color:#93c5fd}
+body.dark .callout.info{background:#16253f}
+.callout b.title{display:block;margin-bottom:3px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.93rem}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:#eef2ff;color:#1e293b} body.dark th{background:#232b4d;color:#e8edf7}
+tr:nth-child(even) td{background:#fafbfe} body.dark tr:nth-child(even) td{background:#171f36}
+.pill{display:inline-block;padding:1px 9px;border-radius:999px;font-size:.78rem;font-weight:800;white-space:nowrap}
+.yes{background:#dcfce7;color:#166534}.no{background:#fee2e2;color:#991b1b}.mid{background:#fef9c3;color:#854d0e}.neu{background:#e0e7ff;color:#3730a3}
+details{border:1.5px solid var(--line);border-radius:12px;padding:0 16px;margin:10px 0}
+details summary{cursor:pointer;font-weight:700;padding:13px 2px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"▸ ";color:var(--brand);font-weight:900}
+details[open] summary::before{content:"▾ "}
+ul.tight{margin:6px 0;padding-left:20px} ul.tight li{margin:4px 0}
+.checklist{list-style:none;padding:0;margin:8px 0}.checklist li{padding:7px 10px;border:1px solid var(--line);border-radius:10px;margin:7px 0;background:#fcfcff}
+body.dark .checklist li{background:#171f36}
+/* hierarchy */
+.tree{font-size:.95rem}
+.tree .node{display:inline-block;background:var(--brand);color:#fff;font-weight:800;padding:7px 14px;border-radius:11px}
+.tree .node.map{background:var(--accent)} .tree .node.impl{background:#0f766e}
+.tree ul{list-style:none;padding-left:26px;border-left:2px dashed #c7d2fe;margin:8px 0 8px 14px}
+.tree li{margin:12px 0;position:relative}
+.tree li::before{content:"";position:absolute;left:-26px;top:16px;width:22px;border-top:2px dashed #c7d2fe}
+.tree .impls{display:flex;gap:7px;flex-wrap:wrap;margin-top:7px}
+.tree .impls span{background:#ecfdf5;border:1.5px solid #6ee7b7;color:#065f46;padding:3px 10px;border-radius:999px;font-weight:700;font-size:.85rem}
+body.dark .tree .impls span{background:#10351f;color:#a7f3d0}
+.tree .impls span.o{background:#fff7ed;border-color:#fdba74;color:#9a3412} body.dark .tree .impls span.o{background:#2a1c0d;color:#fed7aa}
+/* playground */
+.lab{border:2px dashed #a5b4fc;border-radius:16px;padding:18px;margin:18px 0;background:#fafaff}
+body.dark .lab{background:#10182c;border-color:#3b4a7a}
+.lab-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.lab-head .tag{background:var(--brand);color:#fff;font-size:.72rem;font-weight:900;padding:3px 9px;border-radius:999px;letter-spacing:.06em}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+input[type=text],input[type=number],select,input[type=search]{padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;font-size:.95rem;background:var(--card);color:var(--ink)}
+input:focus,select:focus{outline:2px solid var(--brand);outline-offset:1px}
+.log{font-family:ui-monospace,Consolas,monospace;font-size:.88rem;background:var(--code);color:#a5f3fc;border-radius:11px;padding:11px 14px;min-height:44px;white-space:pre-wrap;margin-top:10px}
+.boxes{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end;margin:14px 0;min-height:64px}
+.cell{text-align:center;animation:pop .25s ease}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.cell .box{min-width:58px;padding:13px 10px;border-radius:12px;background:linear-gradient(180deg,#6366f1,#4f46e5);color:#fff;font-weight:800;box-shadow:0 4px 12px rgba(79,70,229,.3)}
+.cell .box.empty{background:transparent;border:2px dashed #b6c2d9;color:var(--muted);box-shadow:none;font-weight:600}
+.cell .box.teal{background:linear-gradient(180deg,#14b8a6,#0f766e);box-shadow:0 4px 12px rgba(15,118,110,.3)}
+.cell .box.orange{background:linear-gradient(180deg,#fb923c,#f97316);box-shadow:0 4px 12px rgba(249,115,22,.3)}
+.cell .box.pink{background:linear-gradient(180deg,#f472b6,#db2777);box-shadow:0 4px 12px rgba(219,39,119,.3)}
+.cell .idx{font-size:.75rem;color:var(--muted);margin-top:4px;font-weight:700}
+.stackvis{display:flex;flex-direction:column-reverse;gap:7px;align-items:center;margin:14px auto;max-width:240px;min-height:60px}
+.plate{width:100%;text-align:center;background:linear-gradient(90deg,#7c3aed,#9333ea);color:#fff;font-weight:800;padding:10px;border-radius:11px;animation:pop .25s}
+.endlabels{display:flex;justify-content:space-between;font-weight:900;font-size:.78rem;color:var(--teal);max-width:100%;margin-top:-6px}
+.radio-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.radio-row label{cursor:pointer;border:1.5px solid var(--line);padding:8px 14px;border-radius:999px;font-weight:700;font-size:.9rem}
+.radio-row input{display:none}
+.radio-row label.sel{background:var(--brand);color:#fff;border-color:var(--brand)}
+.kv-map{display:grid;gap:8px;margin:12px 0}
+.kv{display:flex;align-items:center;gap:10px;animation:pop .25s}
+.kv .kk{background:#f97316;color:#fff;font-weight:800;padding:9px 14px;border-radius:10px;min-width:90px;text-align:center}
+.kv .arrow{font-weight:900;color:var(--muted)}
+.kv .vv{background:#eef2ff;border:1.5px solid #c7d2fe;padding:9px 14px;border-radius:10px;font-weight:700;flex:1}
+body.dark .kv .vv{background:#232b4d}
+.buckets{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:14px 0}
+.bucket{border:2px dashed #b6c2d9;border-radius:12px;padding:9px;min-height:74px;font-size:.85rem}
+.bucket b{font-size:.75rem;color:var(--muted)}
+.bucket .it{display:block;background:#4f46e5;color:#fff;border-radius:8px;padding:4px 8px;margin-top:5px;font-weight:700;animation:pop .25s}
+.memrow{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0}
+.mem{border:2px solid var(--line);border-radius:14px;padding:14px;min-width:200px;flex:1}
+.mem .addr{font-family:ui-monospace,monospace;font-size:.8rem;color:var(--pink);font-weight:800}
+.verdict{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.verdict .v{border-radius:12px;padding:12px;text-align:center;border:1.5px solid var(--line)}
+.verdict .v b.big{display:block;font-size:1.25rem}
+.true{color:var(--ok)} .false{color:var(--bad)}
+/* tabs */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0}
+.tabbtn{border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:999px;font-weight:800;cursor:pointer}
+.tabbtn.sel{background:var(--ink);color:var(--bg)}
+.tabpanel{display:none;border:1.5px solid var(--line);border-radius:14px;padding:18px;margin-top:12px}
+.tabpanel.show{display:block}
+/* wizard */
+.wizard{border:2px solid var(--brand);border-radius:16px;padding:20px;background:#fafaff}
+body.dark .wizard{background:#10182c}
+.wq{font-size:1.15rem;font-weight:800;margin:6px 0 4px}
+.wopts{display:grid;gap:9px;margin:14px 0}
+.wopt{text-align:left;padding:13px 16px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font-weight:700;cursor:pointer;font-size:.97rem}
+.wopt:hover{border-color:var(--brand);background:#eef2ff} body.dark .wopt:hover{background:#232b4d}
+.wresult{background:linear-gradient(135deg,#ecfdf5,#f0fdfa);border:2px solid #34d399;border-radius:14px;padding:18px}
+body.dark .wresult{background:#10351f}
+.wresult .rec{font-size:1.5rem;font-weight:900;color:var(--teal)}
+.wcrumb{font-size:.82rem;color:var(--muted);margin-bottom:6px}
+/* flashcards */
+.flash{perspective:900px;height:200px;cursor:pointer}
+.flash-in{position:relative;width:100%;height:100%;transition:transform .55s;transform-style:preserve-3d}
+.flash.flip .flash-in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:18px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.face.front{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;font-size:1.12rem;font-weight:800}
+.face.back{background:var(--card);border:2px solid var(--brand);transform:rotateY(180deg);font-size:.95rem}
+.face small{opacity:.8;font-weight:600;margin-top:8px}
+/* quiz */
+.quiz-q{border:1.5px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}
+.quiz-q h4{margin-top:0}
+.qopt{display:block;width:100%;text-align:left;margin:7px 0;padding:11px 14px;border-radius:11px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-weight:600;font-size:.95rem}
+.qopt:hover{border-color:var(--brand)}
+.qopt.right{background:var(--okbg);border-color:var(--ok);color:var(--ok);font-weight:800}
+.qopt.wrong{background:var(--badbg);border-color:var(--bad);color:var(--bad);font-weight:800}
+.qexp{display:none;margin-top:10px}
+.qexp.show{display:block}
+.scorebar{position:sticky;bottom:12px;background:var(--ink);color:var(--bg);border-radius:999px;padding:11px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px;box-shadow:var(--shadow);font-weight:800;flex-wrap:wrap}
+.scorebar .btn{background:var(--accent);color:#fff}
+/* complexity bars */
+.bar-row{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:.9rem}
+.bar-row .lbl{width:230px;font-weight:700}
+.bar-track{flex:1;height:16px;background:#e7ebf4;border-radius:999px;overflow:hidden} body.dark .bar-track{background:#232b4d}
+.bar-fill{height:100%;border-radius:999px}
+.copyrow{display:flex;justify-content:flex-end;margin:8px 0 0}
+.topbtn{position:fixed;right:16px;bottom:16px;z-index:50;width:48px;height:48px;border-radius:50%;border:0;background:var(--brand);color:#fff;font-size:1.2rem;cursor:pointer;box-shadow:var(--shadow);display:none}
+.foot{max-width:1180px;margin:auto;padding:0 16px 40px;color:var(--muted);font-size:.9rem;text-align:center}
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .toc{position:static;display:flex;gap:4px;overflow-x:auto;align-items:center;padding:10px}
+  .toc h3,.toc .tools{display:none}.toc a{white-space:nowrap}
+  .g3,.g4{grid-template-columns:1fr 1fr}.g2,.verdict{grid-template-columns:1fr}
+  .buckets{grid-template-columns:1fr 1fr}section{padding:20px}
+  .bar-row .lbl{width:150px}
+}
+@media print{.toc,.hero-btns,.topbtn,.progress-wrap,.controls,.scorebar{display:none!important}.layout{grid-template-columns:1fr}section{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="progress-wrap"><div id="progress"></div></div>
+
+<header class="hero">
+  <div class="hero-in">
+    <span class="badge">JAVA COLLECTIONS FRAMEWORK • INTERACTIVE NOTES</span>
+    <h1>Java Collections,<br>finally made click-able. 🧩</h1>
+    <p class="lead">Your class notes — reorganised into a visual, hands-on guide. Don’t just read about <b>List, Set, Map, Queue &amp; Stack</b>: push, pop, add, break and fix them right here on the page.</p>
+    <div class="hero-stats">
+      <div class="stat"><b>7</b> live playgrounds</div>
+      <div class="stat"><b>1</b> “which collection?” wizard</div>
+      <div class="stat"><b>10</b> quiz questions</div>
+      <div class="stat"><b>1</b> master cheat-sheet</div>
+    </div>
+    <div class="hero-btns">
+      <a class="btn btn-light" href="#bigpicture">▶ Start with the big picture</a>
+      <a class="btn btn-ghost" href="#wizard-sec">🧭 Help me choose a collection</a>
+      <a class="btn btn-ghost" href="#cheatsheet">⚡ Jump to cheat-sheet</a>
+    </div>
+    <p class="small" style="opacity:.85;margin-top:16px">💡 How to use: read a section → play with its lab → flip the flashcards → take the quiz. Everything works offline in this one file.</p>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc" id="toc">
+    <h3>On this page</h3>
+    <a href="#bigpicture">1 · The big picture</a>
+    <a href="#adt">2 · What is an ADT?</a>
+    <a href="#family">3 · The family tree</a>
+    <a href="#wizard-sec">4 · Choose the right one 🧭</a>
+    <a href="#trio">5 · equals / hashCode / compareTo ⭐</a>
+    <a href="#list">6 · List &amp; ArrayList</a>
+    <a href="#iteration">7 · Iteration: internal vs external</a>
+    <a href="#stackqueue">8 · Stack, Queue &amp; Priority</a>
+    <a href="#set">9 · Set — no duplicates</a>
+    <a href="#map">10 · Map — key → value</a>
+    <a href="#threads">11 · Thread safety</a>
+    <a href="#primitives">12 · Why no primitives?</a>
+    <a href="#complexity">13 · Speed at a glance</a>
+    <a href="#cheatsheet">14 · Master cheat-sheet</a>
+    <a href="#flash">15 · Flashcards</a>
+    <a href="#quiz">16 · Quiz 🎯</a>
+    <a href="#interview">17 · Interview in 60 seconds</a>
+    <div class="tools">
+      <button class="btn btn-outline btn-sm" id="themeBtn">🌙 Toggle dark mode</button>
+      <button class="btn btn-outline btn-sm" onclick="window.print()">🖨️ Print / save PDF</button>
+    </div>
+  </nav>
+
+  <main>
+
+  <!-- 1 BIG PICTURE -->
+  <section id="bigpicture">
+    <span class="eyebrow">Section 1 · Start here</span>
+    <h2>The big picture in 30 seconds</h2>
+    <div class="big-idea"><b>A collection is just a smart container for a group of objects.</b> Instead of hand-writing arrays and resize logic forever, Java gives you ready-made containers — each specialised for a different job.</div>
+    <p>The <b>Collections Framework</b> is the toolbox that contains all of them. It has exactly three kinds of pieces:</p>
+    <div class="grid g3">
+      <div class="card"><div class="icon">📋</div><h4>1. Interfaces</h4><p>The <i>promise</i> — what operations exist. E.g. <code class="inline">List</code>, <code class="inline">Set</code>, <code class="inline">Map</code>, <code class="inline">Queue</code>.</p><p class="muted small">“A List <i>can</i> add, get by index, remove…”</p></div>
+      <div class="card"><div class="icon">🏗️</div><h4>2. Implementations</h4><p>The <i>actual working classes</i> — how it’s really built inside. E.g. <code class="inline">ArrayList</code>, <code class="inline">HashSet</code>, <code class="inline">HashMap</code>.</p><p class="muted small">“ArrayList keeps an array under the hood.”</p></div>
+      <div class="card"><div class="icon">⚙️</div><h4>3. Algorithms</h4><p>Ready-made operations that work on any collection: <code class="inline">Collections.sort()</code>, <code class="inline">shuffle()</code>, <code class="inline">binarySearch()</code>.</p><p class="muted small">Write once, works everywhere.</p></div>
+    </div>
+    <div class="callout info"><b class="title">🎯 Why bother?</b>Out-of-the-box functionality → <b>less effort</b> for you, <b>fewer bugs</b> (the code is battle-tested), and <b>software reuse</b> (every Java dev already knows these classes).</div>
+    <h3>Real life is full of collections</h3>
+    <div class="grid g3">
+      <div class="card"><div class="icon">🛒</div><p><b>Shopping cart</b> of items to buy on a website</p></div>
+      <div class="card"><div class="icon">🏪</div><p><b>Products on shelves</b> in a store inventory</p></div>
+      <div class="card"><div class="icon">👥</div><p><b>Customer records</b> a business must maintain</p></div>
+      <div class="card"><div class="icon">🚗</div><p><b>Cars</b> for sale, for rental, or for servicing</p></div>
+      <div class="card"><div class="icon">📚</div><p>Your personal <b>books, CDs, DVDs, cards…</b></p></div>
+      <div class="card"><div class="icon">🔤</div><p>Counting things: <b>vowel → number of occurrences</b> (that’s a Map!)</p></div>
+    </div>
+    <p class="muted">Almost every useful application needs to gather many objects, store them together, and pass them around as one single object. That’s what collections do — just like an array does, but far more powerful.</p>
+  </section>
+
+  <!-- 2 ADT -->
+  <section id="adt">
+    <span class="eyebrow">Section 2 · Core concept</span>
+    <h2>What is an ADT (Abstract Data Type)?</h2>
+    <div class="big-idea">Every time you define a new class, you’re inventing a <b>new type of data</b> — a bundle of <b>attributes + behaviours</b> treated as one thing. An <b>ADT</b> describes a data type by <b>what you can do with it</b>, hiding <i>how</i> it works inside.</div>
+    <div class="grid g2">
+      <div class="card"><h4>🍳 Analogy: a coffee machine</h4><p><b>ADT view (“what”):</b> insert capsule → press button → get coffee.</p><p><b>Implementation view (“how”):</b> pumps, heaters, pressure valves…</p><p class="muted small">You can use it perfectly without seeing the pipes. Interfaces in Java play this “what” role; classes play the “how” role.</p></div>
+      <div class="card"><h4>🧰 Each ADT has its own personality</h4><p>Different ADTs store, access and modify data differently:</p><ul class="tight"><li><b>List</b> — by position (index)</li><li><b>Set</b> — unique members only</li><li><b>Stack / Queue</b> — by arrival order</li><li><b>Map</b> — by key</li></ul><p class="muted small">Usually all data inside one ADT is of the same kind.</p></div>
+    </div>
+    <h3>Two superpowers ADTs give you</h3>
+    <table>
+      <tr><th style="width:50%">1️⃣ Simpler thinking &amp; pseudocode</th><th>2️⃣ Pick the best tool for the job</th></tr>
+      <tr>
+        <td>Write <b>“Add x to the list”</b> instead of <i>“Put x at position size in the array, then size = size + 1”</i>. The messy details are hidden.</td>
+        <td>ADTs let us <b>compare data structures by behaviour</b>: this one removes fast, that one searches fast. You choose whichever fits your problem.</td>
+      </tr>
+    </table>
+    <div class="callout ok"><b class="title">✅ One-line summary</b><b>Collection</b> is the friendly everyday word for these ADTs — “easy-to-use” containers that collect data together.</div>
+  </section>
+
+  <!-- 3 FAMILY TREE -->
+  <section id="family">
+    <span class="eyebrow">Section 3 · Map of the territory</span>
+    <h2>The Collections family tree 🌳</h2>
+    <p>Two separate families. Almost everything descends from the <code class="inline">Collection</code> interface — except <code class="inline">Map</code>, which is its own family because it stores <i>pairs</i>, not single items.</p>
+    <div class="grid g2">
+      <div class="tree">
+        <span class="node">Collection</span>
+        <ul>
+          <li><span class="node">List</span> <span class="muted small">ordered, by index, duplicates OK</span>
+            <div class="impls"><span>ArrayList ⭐</span><span>LinkedList</span><span class="o">Vector (legacy, thread-safe)</span></div></li>
+          <li><span class="node">Set</span> <span class="muted small">no duplicates</span>
+            <div class="impls"><span>HashSet ⭐</span><span>LinkedHashSet</span><span>TreeSet (sorted)</span></div></li>
+          <li><span class="node">Queue</span> <span class="muted small">process in order (usually FIFO)</span>
+            <div class="impls"><span>PriorityQueue</span><span class="o">ArrayBlockingQueue</span><span>LinkedList</span></div></li>
+          <li><span class="node">Deque</span> <span class="muted small">double-ended queue (also = modern Stack)</span>
+            <div class="impls"><span>ArrayDeque ⭐</span><span>LinkedList</span></div></li>
+        </ul>
+      </div>
+      <div class="tree">
+        <span class="node map">Map</span> <span class="muted small">(separate root — key → value pairs)</span>
+        <ul>
+          <li><span class="node map">Map implementations</span>
+            <div class="impls"><span>HashMap ⭐</span><span>LinkedHashMap</span><span>TreeMap (sorted keys)</span><span class="o">Hashtable (legacy)</span><span class="o">ConcurrentHashMap</span></div></li>
+        </ul>
+        <div class="callout warn" style="margin-top:18px"><b class="title">⭐ If you only memorise four</b>
+        <b>List → ArrayList</b> · <b>Set → HashSet</b> (TreeSet if sorted) · <b>Map → HashMap</b> (TreeMap if sorted) · <b>Queue → ArrayBlockingQueue / PriorityQueue</b></div>
+        <div class="card"><h4>➕ The utility belt: <code class="inline">Collections</code> (with an “s”)</h4><p>Not a container — a helper class full of static methods: <code class="inline">sort()</code>, <code class="inline">reverse()</code>, <code class="inline">shuffle()</code>, <code class="inline">binarySearch()</code>, <code class="inline">synchronizedList()</code>…</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 WIZARD -->
+  <section id="wizard-sec">
+    <span class="eyebrow">Section 4 · Decision helper</span>
+    <h2>“Which collection do I need?” 🧭</h2>
+    <p>These are the questions from your notes that professionals ask before choosing. First, here’s the full checklist — then try the interactive wizard underneath.</p>
+    <ul class="checklist">
+      <li>📏 Is it a simple one-dimensional, array-like sequence? → think <b>List</b></li>
+      <li>🚫 No duplicates allowed? → think <b>Set</b></li>
+      <li>🔑 Is it key → value (e.g. vowel → count)? → think <b>Map</b></li>
+      <li>↪️ First-in-first-out? → <b>Queue</b> &nbsp;·&nbsp; Last-in-first-out? → <b>Stack</b></li>
+      <li>🔢 Must it keep <b>insertion order</b>? Must it stay <b>sorted</b>?</li>
+      <li>⌀ Does it allow <b>nulls</b>? Does it allow <b>duplicates</b>?</li>
+      <li>🧵 Must it be <b>thread-safe</b> (many threads at once)?</li>
+      <li>⏱️ What is the <b>time/space complexity</b> of the operations <i>your</i> problem uses most?</li>
+    </ul>
+
+    <div class="lab-head" style="margin-top:20px"><span class="tag">INTERACTIVE</span><h3 style="margin:0">The Collection Chooser</h3></div>
+    <p class="muted small">Answer like you’re designing a real feature. Try it for: a shopping cart · a list of unique usernames · counting word frequencies · a printer job line.</p>
+    <div class="wizard" id="wizard"></div>
+  </section>
+
+  <!-- 5 TRIO -->
+  <section id="trio">
+    <span class="eyebrow">Section 5 · ⭐ Interview gold</span>
+    <h2>The golden trio: <code class="inline">==</code>, <code class="inline">equals()</code>, <code class="inline">hashCode()</code> + <code class="inline">compareTo()</code></h2>
+    <div class="callout bad"><b class="title">💼 From your notes, in giant letters:</b>“THEY WILL GET YOU THE JOB IF YOU CAN EXPLAIN THEM PROPERLY. NO JOKES.” — so let’s make sure you can. 😄</div>
+
+    <div class="grid g3">
+      <div class="card"><div class="icon">🏠</div><h4><code class="inline">==</code> — same house?</h4><p>Compares <b>memory references</b>. <code class="inline">true</code> only if both variables point to the <b>exact same object</b> in memory.</p><p class="muted small">“Are these two addresses the same house?”</p></div>
+      <div class="card"><div class="icon">👥</div><h4><code class="inline">equals()</code> — same content?</h4><p>Compares <b>meaning / business equality</b>. Two different objects can be equal if their important fields match (e.g. same name + age).</p><p class="muted small">“Two different houses, but identical inside.”</p></div>
+      <div class="card"><div class="icon">🪣</div><h4><code class="inline">hashCode()</code> — which bucket?</h4><p>Returns an <code class="inline">int</code> that decides <b>which bucket</b> of a hash table the object goes into, so <code class="inline">HashMap</code>/<code class="inline">HashSet</code> can find it fast.</p><p class="muted small">“The shelf number where we file it.”</p></div>
+    </div>
+    <div class="card" style="margin-top:14px"><div class="icon">⚖️</div><h4>…and <code class="inline">compareTo()</code> — who comes first?</h4><p>Defines <b>ordering</b>. Negative = “I come before”, 0 = “same position”, positive = “I come after”. <code class="inline">TreeSet</code> / <code class="inline">TreeMap</code> use it both to <b>sort</b> <i>and</i> to detect duplicates (compareTo == 0 ⇒ treated as duplicate!).</p></div>
+
+    <div class="lab">
+      <div class="lab-head"><span class="tag">TRY IT</span><h4 style="margin:0">Lab A — <code class="inline">==</code> vs <code class="inline">equals()</code></h4></div>
+      <p class="small muted">Edit the two people. <b>p3</b> is not a new person — it’s a second name-tag stuck on the same object as <b>p1</b> (<code class="inline">Person p3 = p1;</code>).</p>
+      <div class="controls">
+        <label>p1: <input type="text" id="p1name" value="Aarav" size="9"> age <input type="number" id="p1age" value="21" style="width:70px"></label>
+        <label>p2: <input type="text" id="p2name" value="Aarav" size="9"> age <input type="number" id="p2age" value="21" style="width:70px"></label>
+        <button class="btn btn-brand btn-sm" onclick="runEquals()">▶ Create &amp; compare</button>
+      </div>
+      <div class="memrow" id="memrow"></div>
+      <div class="verdict" id="verdict"></div>
+      <div class="log" id="equalsLog">Press “Create & compare”…</div>
+      <details><summary>How do I read the “identity” numbers?</summary><p><code class="inline">System.identityHashCode(obj)</code> gives a number based on the object’s <b>memory identity</b> (roughly its memory address — Java hides real addresses for safety). Same object ⇒ same identity number. It’s the closest Java lets you get to “show me the memory reference”, and it’s great for debugging. Collisions are possible but rare within one run.</p></details>
+    </div>
+
+    <h3>The contract you must never break 📜</h3>
+    <div class="big-idea">If <code class="inline">a.equals(b)</code> is <b>true</b>, then <code class="inline">a.hashCode()</code> <b>MUST</b> equal <code class="inline">b.hashCode()</code>.<br><span class="muted">The reverse is <i>not</i> required: same hashCode ⇏ equal (two strangers can share a shelf — that’s a <b>collision</b>).</span></div>
+    <p>By default, <code class="inline">Object.equals()</code> behaves like <code class="inline">==</code> (reference check). When you override <code class="inline">equals()</code> to compare fields, you <b>must</b> override <code class="inline">hashCode()</code> using the <i>same fields</i> — otherwise equal objects land in different buckets and hash collections “lose” them.</p>
+
+    <div class="lab">
+      <div class="lab-head"><span class="tag">TRY IT</span><h4 style="margin:0">Lab B — Bucket visualiser (why the contract matters)</h4></div>
+      <p class="small muted">A mini <code class="inline">HashSet</code> with 8 buckets. The bucket number comes from <code class="inline">hashCode()</code>. Add the same person twice — then tick “break the contract” and watch it go wrong.</p>
+      <div class="controls">
+        <input type="text" id="bkName" value="Priya" size="9" placeholder="name">
+        <input type="number" id="bkAge" value="25" style="width:75px" placeholder="age">
+        <button class="btn btn-teal btn-sm" onclick="bucketAdd()">set.add(person)</button>
+        <button class="btn btn-outline btn-sm" onclick="bucketFind()">set.contains(same person)?</button>
+        <button class="btn btn-outline btn-sm" onclick="bucketReset()">Reset</button>
+        <label class="small"><input type="checkbox" id="breakContract"> ☠️ Break contract (equals overridden, hashCode NOT)</label>
+      </div>
+      <div class="buckets" id="buckets"></div>
+      <div class="log" id="bucketLog">Buckets are empty. Add someone!</div>
+    </div>
+
+    <h3>The correct pair — copy-worthy code</h3>
+    <pre id="code-equals"><span class="k">public class</span> Person {
+    <span class="k">private</span> String name;
+    <span class="k">private int</span> age;
+    <span class="c">// constructors, getters, setters …</span>
+
+    @Override
+    <span class="k">public boolean</span> equals(Object o) {
+        <span class="k">if</span> (<span class="k">this</span> == o) <span class="k">return true</span>;                    <span class="c">// same object? done</span>
+        <span class="k">if</span> (o == <span class="k">null</span> || getClass() != o.getClass()) <span class="k">return false</span>;
+        Person person = (Person) o;
+        <span class="k">return</span> age == person.age &amp;&amp; name.equals(person.name);
+    }
+
+    @Override
+    <span class="k">public int</span> hashCode() {
+        <span class="k">return</span> Objects.hash(name, age);   <span class="c">// SAME fields as equals()</span>
+    }
+}</pre>
+    <div class="copyrow"><button class="btn btn-outline btn-sm" onclick="copyCode('code-equals',this)">📋 Copy code</button></div>
+    <table>
+      <tr><th>Method</th><th>Used by</th><th>Decides</th></tr>
+      <tr><td><code class="inline">equals()</code> + <code class="inline">hashCode()</code></td><td>HashSet, HashMap, Hashtable</td><td>“Is this a duplicate? Which bucket?”</td></tr>
+      <tr><td><code class="inline">compareTo()</code> (or a Comparator)</td><td>TreeSet, TreeMap, sorting</td><td>“What order? (0 ⇒ duplicate in TreeSet)”</td></tr>
+      <tr><td><code class="inline">==</code></td><td>You, directly</td><td>“Literally the same object in memory?”</td></tr>
+    </table>
+    <div class="callout ok"><b class="title">✅ Why interviewers love this</b>Correct pair ⇒ objects behave in collections + fast lookups (good hashCode spreads objects evenly, few collisions). Broken pair ⇒ subtle, horrible-to-debug “my object vanished from the HashMap” bugs.</div>
+  </section>
+
+  <!-- 6 LIST -->
+  <section id="list">
+    <span class="eyebrow">Section 6 · Collection #1</span>
+    <h2>List — an ordered sequence with an index 🔢</h2>
+    <div class="big-idea">A <b>List</b> is an ordered collection where each element sits at a <b>position (index)</b>, like an array — and the <b>same value may appear more than once</b>.</div>
+    <h3>ArrayList: the everyday List</h3>
+    <ul class="tight">
+      <li>📏 A <b>resizable (dynamic) array</b> — grows when full, shrinks as elements are removed. Internally it really is an array.</li>
+      <li>🎯 Retrieve any element instantly <b>by index</b>: <code class="inline">get(i)</code>.</li>
+      <li>✅ Allows <b>duplicates</b> and <b>null</b> values. Keeps <b>insertion order</b>.</li>
+      <li>📦 Objects only — no primitives. Use wrappers: <code class="inline">Integer</code>, <code class="inline">Character</code>, <code class="inline">Boolean</code>… (see <a href="#primitives">Section 12</a>).</li>
+      <li>🧵 <b>Not thread-safe.</b> Two threads modifying it at once ⇒ non-deterministic mess. Synchronise explicitly if needed.</li>
+    </ul>
+    <p class="small muted">Common methods: <code class="inline">add()</code> · <code class="inline">get()</code> · <code class="inline">set()</code> · <code class="inline">remove()</code> · <code class="inline">indexOf()</code></p>
+
+    <div class="lab">
+      <div class="lab-head"><span class="tag">TRY IT</span><h4 style="margin:0">Lab C — ArrayList playground</h4></div>
+      <p class="small muted">Watch <b>size</b> (elements stored) vs simulated <b>capacity</b> (backing-array slots). When it fills up, the array is replaced by a bigger one — that’s the “dynamic” part. Try adding a duplicate and an empty (null) value!</p>
+      <div class="controls">
+        <input type="text" id="alVal" placeholder="value e.g. mango" size="14">
+        <button class="btn btn-brand btn-sm" onclick="alAdd()">add(value)</button>
+        <input type="number" id="alIdx" placeholder="index" style="width:80px">
+        <button class="btn btn-outline btn-sm" onclick="alGet()">get(index)</button>
+        <button class="btn btn-outline btn-sm" onclick="alRemoveIdx()">remove(index)</button>
+        <button class="btn btn-accent btn-sm" onclick="alExample()">Load example</button>
+        <button class="btn btn-outline btn-sm" onclick="alClear()">clear()</button>
+      </div>
+      <div class="boxes" id="alBoxes"></div>
+      <p class="small" id="alMeta"></p>
+      <div class="log" id="alLog">List&lt;String&gt; list = new ArrayList&lt;&gt;();</div>
+    </div>
+
+    <h3>ArrayList vs LinkedList — same interface, different engine</h3>
+    <table>
+      <tr><th></th><th>ArrayList ⭐ (backed by array)</th><th>LinkedList (chain of nodes)</th></tr>
+      <tr><td><b>get(i)</b> random access</td><td><span class="pill yes">Fast — O(1)</span> jump straight there</td><td><span class="pill no">Slow — O(n)</span> walk the chain</td></tr>
+      <tr><td><b>Insert / delete in middle</b></td><td><span class="pill mid">Slower — O(n)</span> shuffle everyone along</td><td><span class="pill yes">Fast</span> just re-link neighbours*</td></tr>
+      <tr><td><b>Default choice?</b></td><td colspan="2">Yes — start with <b>ArrayList</b> unless you have a measured reason. (*Finding the spot in a LinkedList still costs a walk.)</td></tr>
+    </table>
+  </section>
+
+  <!-- 7 ITERATION -->
+  <section id="iteration">
+    <span class="eyebrow">Section 7 · Working with elements</span>
+    <h2>Iteration: who’s driving the loop? 🚗</h2>
+    <div class="tabs">
+      <button class="tabbtn sel" data-tab="ext">🧑‍✈️ External — you drive</button>
+      <button class="tabbtn" data-tab="int">🤖 Internal — library drives (Java 8 Streams)</button>
+    </div>
+    <div class="tabpanel show" id="tab-ext">
+      <p><b>External iteration:</b> <i>you</i> control the traversal — the loop, the counter, when it stops. Classic imperative style.</p>
+      <pre>List&lt;String&gt; alphabets = Arrays.asList(<span class="s">"a"</span>, <span class="s">"b"</span>, <span class="s">"c"</span>, <span class="s">"d"</span>);
+
+<span class="c">// enhanced for-loop</span>
+<span class="k">for</span> (String letter : alphabets) {
+    System.out.println(letter.toUpperCase());
+}
+
+<span class="c">// or an explicit Iterator</span>
+Iterator&lt;String&gt; it = alphabets.iterator();
+<span class="k">while</span> (it.hasNext()) {
+    System.out.println(it.next().toUpperCase());
+}</pre>
+      <p><b>Pros:</b> full control. <b>Cons:</b> verbose, error-prone, inherently <b>sequential &amp; in-order</b> — the library can’t reorder, parallelise, short-circuit or be lazy on your behalf.</p>
+    </div>
+    <div class="tabpanel" id="tab-int">
+      <p><b>Internal iteration:</b> you say <i>what</i> to do with each element; the library handles <i>how</i> to visit them. In Java 8, that’s the <code class="inline">Stream</code> API.</p>
+      <pre>alphabets.stream()
+    .map(String::toUpperCase)     <span class="c">// transform each element</span>
+    .forEach(System.out::println); <span class="c">// do something with each</span>
+
+<span class="c">// streams chain operations: filter → map → reduce / min / max / average …</span>
+alphabets.stream()
+    .filter(s -&gt; s.startsWith(<span class="s">"a"</span>))
+    .forEach(System.out::println);</pre>
+      <p><b>Pros:</b> concise, declarative, easier to parallelise, fewer loop bugs. <b>Cons:</b> less step-by-step control.</p>
+    </div>
+    <div class="callout warn"><b class="title">⚠️ Exam favourite: ConcurrentModificationException</b>If you <b>modify a collection while iterating over it</b> externally (e.g. calling <code class="inline">list.remove()</code> inside a for-each loop), Java throws <code class="inline">ConcurrentModificationException</code>. Safe options: use the Iterator’s own <code class="inline">remove()</code>, collect items to delete and remove them afterwards, or use a stream/filter approach.</div>
+  </section>
+
+  <!-- 8 STACK QUEUE -->
+  <section id="stackqueue">
+    <span class="eyebrow">Section 8 · Collections #2–4</span>
+    <h2>Stack, Queue &amp; PriorityQueue — order of processing</h2>
+    <div class="grid g3">
+      <div class="card"><div class="icon">🥞</div><h4>Stack — LIFO</h4><p><b>Last In, First Out.</b> Like a stack of plates: add &amp; remove at the <b>top only</b>.</p><p class="small"><code class="inline">push()</code> · <code class="inline">pop()</code> · <code class="inline">peek()</code></p></div>
+      <div class="card"><div class="icon">🧍🧍🧍</div><h4>Queue — FIFO</h4><p><b>First In, First Out.</b> Like a checkout line: join at the back, served from the front.</p><p class="small"><code class="inline">offer()</code> · <code class="inline">poll()</code> · <code class="inline">peek()</code></p></div>
+      <div class="card"><div class="icon">🚑</div><h4>PriorityQueue</h4><p>Like an ER: the <b>most urgent</b> goes first, not the earliest. Priority is part of the object itself (natural ordering / Comparator), so it’s just <code class="inline">add(x)</code>.</p><p class="small"><code class="inline">offer()</code> · <code class="inline">poll()</code> · <code class="inline">peek()</code></p></div>
+    </div>
+
+    <div class="grid g2">
+      <div class="lab">
+        <div class="lab-head"><span class="tag">TRY IT</span><h4 style="margin:0">Lab D — Stack (LIFO)</h4></div>
+        <div class="controls">
+          <input type="text" id="stVal" placeholder="plate label" size="10">
+          <button class="btn btn-brand btn-sm" onclick="stPush()">push()</button>
+          <button class="btn btn-accent btn-sm" onclick="stPop()">pop()</button>
+          <button class="btn btn-outline btn-sm" onclick="stPeek()">peek()</button>
+        </div>
+        <div class="stackvis" id="stVis"></div>
+        <div class="log" id="stLog">Stack is empty. Push a plate!</div>
+      </div>
+      <div class="lab">
+        <div class="lab-head"><span class="tag">TRY IT</span><h4 style="margin:0">Lab E — Queue (FIFO)</h4></div>
+        <div class="controls">
+          <input type="text" id="qVal" placeholder="person / job" size="10">
+          <button class="btn btn-teal btn-sm" onclick="qOffer()">offer()</button>
+          <button class="btn btn-accent btn-sm" onclick="qPoll()">poll()</button>
+          <button class="btn btn-outline btn-sm" onclick="qPeek()">peek()</button>
+        </div>
+        <div class="boxes" id="qVis"></div>
+        <div class="endlabels"><span>⬅ FRONT (leaves next)</span><span>REAR (join here) ➡</span></div>
+        <div class="log" id="qLog">Queue is empty. Offer someone a place in line!</div>
+      </div>
+    </div>
+
+    <div class="lab">
+      <div class="lab-head"><span class="tag">TRY IT</span><h4 style="margin:0">Lab F — PriorityQueue (most urgent first)</h4></div>
+      <p class="small muted">Priority <b>1 = most urgent</b>. Add patients out of order, then poll — notice who jumps the queue.</p>
+      <div class="controls">
+        <input type="text" id="pqName" placeholder="patient name" size="12">
+        <select id="pqPrio"><option value="1">1 — 🚨 critical</option><option value="2">2 — ⚠️ serious</option><option value="3" selected>3 — 🙂 minor</option></select>
+        <button class="btn btn-brand btn-sm" onclick="pqAdd()">offer()</button>
+        <button class="btn btn-accent btn-sm" onclick="pqPoll()">poll() — treat next</button>
+        <button class="btn btn-outline btn-sm" onclick="pqExample()">Load example</button>
+      </div>
+      <div class="boxes" id="pqVis"></div>
+      <div class="log" id="pqLog">Waiting room is empty.</div>
+    </div>
+
+    <div class="callout info"><b class="title">ℹ️ Modern practice</b><code class="inline">Stack</code> is a legacy class (extends <code class="inline">Vector</code>, so it <i>is</i> thread-safe). Today, an <code class="inline">ArrayDeque</code> used as a stack is preferred. <b>Deque</b> = double-ended queue: <code class="inline">addFirst/addLast</code>, <code class="inline">removeFirst/removeLast</code>, <code class="inline">peekFirst/peekLast</code> — it can play both Stack and Queue. Thread-safe queue options: <code class="inline">ArrayBlockingQueue</code> (classic producer–consumer), <code class="inline">LinkedBlockingQueue</code>, <code class="inline">ConcurrentLinkedQueue</code>, <code class="inline">PriorityBlockingQueue</code>.</div>
+  </section>
+
+  <!-- 9 SET -->
+  <section id="set">
+    <span class="eyebrow">Section 9 · Collection #5</span>
+    <h2>Set — every member is unique 🚫👯</h2>
+    <div class="big-idea">A <b>Set</b> is a collection that <b>never holds duplicates</b>. Try to add the same element twice and the second one is simply refused (<code class="inline">add()</code> returns <code class="inline">false</code>).</div>
+    <table>
+      <tr><th>Implementation</th><th>Order</th><th>“Duplicate” decided by</th><th>Good to know</th></tr>
+      <tr><td><b>HashSet</b> ⭐</td><td>None — unordered</td><td><code class="inline">hashCode()</code> → bucket, then <code class="inline">equals()</code></td><td>Fast add/remove/contains. Allows <b>one null</b>. Internally backed by a HashMap (!). Not thread-safe.</td></tr>
+      <tr><td><b>LinkedHashSet</b></td><td>Insertion order</td><td><code class="inline">hashCode()</code> + <code class="inline">equals()</code></td><td>HashSet + remembers the order you added things.</td></tr>
+      <tr><td><b>TreeSet</b> 🌳</td><td>Sorted (Red-Black tree)</td><td><code class="inline">compareTo()</code> / Comparator — 0 ⇒ duplicate</td><td>Always in sorted order. No nulls (can’t compare null).</td></tr>
+    </table>
+    <p class="small muted">Common methods: <code class="inline">add()</code> · <code class="inline">remove()</code> · <code class="inline">contains()</code> · <code class="inline">size()</code></p>
+
+    <div class="lab">
+      <div class="lab-head"><span class="tag">TRY IT</span><h4 style="margin:0">Lab G — Set lab: same input, three personalities</h4></div>
+      <p class="small muted">Pick an implementation, then add values — deliberately repeat one! Same members, different visiting order.</p>
+      <div class="radio-row" id="setMode">
+        <label class="sel"><input type="radio" name="setmode" value="hash" checked>HashSet</label>
+        <label><input type="radio" name="setmode" value="linked">LinkedHashSet</label>
+        <label><input type="radio" name="setmode" value="tree">TreeSet</label>
+      </div>
+      <div class="controls">
+        <input type="text" id="setVal" placeholder="value e.g. banana" size="14">
+        <button class="btn btn-brand btn-sm" onclick="setAdd()">add(value)</button>
+        <button class="btn btn-accent btn-sm" onclick="setExample()">Add: banana, apple, banana, cherry</button>
+        <button class="btn btn-outline btn-sm" onclick="setClear()">clear()</button>
+      </div>
+      <div class="boxes" id="setVis"></div>
+      <div class="log" id="setLog">The set is empty.</div>
+    </div>
+  </section>
+
+  <!-- 10 MAP -->
+  <section id="map">
+    <span class="eyebrow">Section 10 · Collection #6</span>
+    <h2>Map — a dictionary of key → value 🔑</h2>
+    <div class="big-idea">A <b>Map</b> connects <b>unique keys</b> to values — like a dictionary (word → definition) or your notes’ example: <b>vowel → number of occurrences</b>. Each key maps to <b>at most one</b> value.</div>
+    <ul class="tight">
+      <li>🚫 <b>No duplicate keys</b> — putting the same key again <b>overwrites</b> its old value.</li>
+      <li>⌀ <code class="inline">HashMap</code> allows <b>one null key</b> and many null values.</li>
+      <li>🎲 No guaranteed order (HashMap). Need order? <code class="inline">LinkedHashMap</code> (insertion) or <code class="inline">TreeMap</code> (sorted by key).</li>
+      <li>🧵 Not thread-safe — the modern multi-thread choice is <code class="inline">ConcurrentHashMap</code>.</li>
+    </ul>
+    <p class="small muted">Common methods: <code class="inline">put()</code> · <code class="inline">get()</code> · <code class="inline">remove()</code> · <code class="inline">containsKey()</code> · <code class="inline">keySet()</code> · <code class="inline">values()</code></p>
+
+    <div class="lab">
+      <div class="lab-head"><span class="tag">TRY IT</span><h4 style="margin:0">Lab H — HashMap lab (vowel counter &amp; friends)</h4></div>
+      <div class="controls">
+        <input type="text" id="mapKey" placeholder="key e.g. a" size="10">
+        <input type="text" id="mapVal" placeholder="value e.g. 3" size="10">
+        <button class="btn btn-brand btn-sm" onclick="mapPut()">put(key, value)</button>
+        <button class="btn btn-outline btn-sm" onclick="mapGet()">get(key)</button>
+        <button class="btn btn-outline btn-sm" onclick="mapRemove()">remove(key)</button>
+        <button class="btn btn-accent btn-sm" onclick="mapExample()">Count vowels in “banana”</button>
+        <button class="btn btn-outline btn-sm" onclick="mapClear()">clear()</button>
+      </div>
+      <div class="kv-map" id="mapVis"></div>
+      <div class="log" id="mapLog">Map&lt;String,Integer&gt; map = new HashMap&lt;&gt;();</div>
+      <p class="small muted">👉 Try <code class="inline">put("a", 3)</code> then <code class="inline">put("a", 99)</code> — one key, newest value wins.</p>
+    </div>
+    <table>
+      <tr><th>Map</th><th>Order</th><th>Null key?</th><th>Thread-safe?</th></tr>
+      <tr><td><b>HashMap</b> ⭐</td><td>None</td><td><span class="pill yes">One</span></td><td><span class="pill no">No</span></td></tr>
+      <tr><td><b>LinkedHashMap</b></td><td>Insertion</td><td><span class="pill yes">One</span></td><td><span class="pill no">No</span></td></tr>
+      <tr><td><b>TreeMap</b></td><td>Sorted by key</td><td><span class="pill no">No</span></td><td><span class="pill no">No</span></td></tr>
+      <tr><td><b>Hashtable</b> (legacy)</td><td>None</td><td><span class="pill no">No</span></td><td><span class="pill yes">Yes (slow)</span></td></tr>
+      <tr><td><b>ConcurrentHashMap</b></td><td>None</td><td><span class="pill no">No</span></td><td><span class="pill yes">Yes ⭐ modern</span></td></tr>
+    </table>
+    <p class="small">📖 Official reference: <a href="https://docs.oracle.com/javase/tutorial/collections/implementations/index.html" target="_blank" rel="noopener">Java Tutorial — Collection Implementations (Oracle)</a> <span class="muted">(needs internet)</span></p>
+  </section>
+
+  <!-- 11 THREADS -->
+  <section id="threads">
+    <span class="eyebrow">Section 11 · Concurrency</span>
+    <h2>Thread safety — one at a time, please 🧵</h2>
+    <div class="big-idea">A data structure is <b>thread-safe</b> if it can guarantee that <b>no two threads access it at the same moment</b> — access happens strictly <b>one at a time</b>, so the data can’t be corrupted mid-operation.</div>
+    <p>Most everyday implementations (<code class="inline">ArrayList</code>, <code class="inline">HashSet</code>, <code class="inline">HashMap</code>) are <b>not</b> thread-safe: two threads modifying them together gives a non-deterministic result. Your options:</p>
+    <div class="grid g3">
+      <div class="card"><div class="icon">🏛️</div><h4>Legacy synchronized classes</h4><p><code class="inline">Vector</code>, <code class="inline">Hashtable</code>, <code class="inline">Stack</code> — thread-safe but slower (every method synchronised).</p></div>
+      <div class="card"><div class="icon">🎁</div><h4>Synchronized wrappers</h4><p><code class="inline">Collections.synchronizedList/Set/Map(...)</code> wraps any implementation.</p><p class="muted small">⚠️ You must still synchronise manually while <i>iterating</i>.</p></div>
+      <div class="card"><div class="icon">🚀</div><h4>Modern concurrent classes ⭐</h4><p>Built for many threads &amp; high throughput — usually the best answer today.</p></div>
+    </div>
+    <table>
+      <tr><th>Family</th><th>Thread-safe options</th></tr>
+      <tr><td><b>List</b></td><td><code class="inline">Vector</code> · <code class="inline">Collections.synchronizedList()</code></td></tr>
+      <tr><td><b>Set</b></td><td><code class="inline">Collections.synchronizedSet()</code> · <code class="inline">ConcurrentSkipListSet</code> (sorted) · <code class="inline">CopyOnWriteArraySet</code> (read-heavy)</td></tr>
+      <tr><td><b>Map</b></td><td><code class="inline">Hashtable</code> · <code class="inline">Collections.synchronizedMap()</code> · <code class="inline">ConcurrentHashMap</code> ⭐</td></tr>
+      <tr><td><b>Queue</b></td><td><code class="inline">ConcurrentLinkedQueue</code> (non-blocking) · <code class="inline">LinkedBlockingQueue</code> · <code class="inline">ArrayBlockingQueue</code> (bounded; producer–consumer classic)</td></tr>
+      <tr><td><b>Deque</b></td><td><code class="inline">ConcurrentLinkedDeque</code> · <code class="inline">LinkedBlockingDeque</code></td></tr>
+      <tr><td><b>Stack</b></td><td><code class="inline">Stack</code> — thread-safe by inheritance from Vector</td></tr>
+      <tr><td><b>PriorityQueue</b></td><td><code class="inline">PriorityBlockingQueue</code></td></tr>
+    </table>
+  </section>
+
+  <!-- 12 PRIMITIVES -->
+  <section id="primitives">
+    <span class="eyebrow">Section 12 · Common “why?!”</span>
+    <h2>Why don’t collections allow primitives? 📦</h2>
+    <div class="big-idea"><code class="inline">List&lt;int&gt;</code> ❌ &nbsp;→&nbsp; <code class="inline">List&lt;Integer&gt;</code> ✅ &nbsp; Collections store <b>objects</b>; <code class="inline">int</code>, <code class="inline">char</code>, <code class="inline">boolean</code>… are <b>not objects</b>.</div>
+
+    <details open><summary>1. Object-oriented design</summary><p>Collections are built around <code class="inline">Object</code>: methods, inheritance, identity. Primitives are bare values — no methods, no inheritance — so they simply don’t fit the machinery.</p></details>
+    <details><summary>2. Generics need reference types</summary><p><code class="inline">List&lt;T&gt;</code> expects <code class="inline">T</code> to be a reference (object) type. Allowing primitives inside <code class="inline">&lt;&gt;</code> would complicate the whole type system.</p></details>
+    <details><summary>3. Type erasure</summary><p>At runtime, generic type info is erased and everything is treated as <code class="inline">Object</code>. Primitives aren’t subclasses of <code class="inline">Object</code>, so they could never survive that process.</p></details>
+    <details open><summary>4. The fix: wrappers + autoboxing / unboxing ⭐</summary>
+      <p>Every primitive has an object “box”. Java packs and unpacks automatically:</p>
+      <pre>List&lt;Integer&gt; intList = <span class="k">new</span> ArrayList&lt;&gt;();
+intList.add(<span class="n">10</span>);               <span class="c">// autoboxing:  int → Integer</span>
+<span class="k">int</span> value = intList.get(<span class="n">0</span>);  <span class="c">// unboxing:    Integer → int</span></pre>
+      <table>
+        <tr><th>Primitive</th><td><code class="inline">int</code></td><td><code class="inline">long</code></td><td><code class="inline">double</code></td><td><code class="inline">char</code></td><td><code class="inline">boolean</code></td><td><code class="inline">byte</code></td><td><code class="inline">short</code></td><td><code class="inline">float</code></td></tr>
+        <tr><th>Wrapper 📦</th><td><code class="inline">Integer</code></td><td><code class="inline">Long</code></td><td><code class="inline">Double</code></td><td><code class="inline">Character</code></td><td><code class="inline">Boolean</code></td><td><code class="inline">Byte</code></td><td><code class="inline">Short</code></td><td><code class="inline">Float</code></td></tr>
+      </table>
+    </details>
+    <details><summary>5. The small price: performance</summary><p>Boxing creates objects and conversions cost a little. In return, Java keeps one clean, consistent, object-only API for all collections.</p></details>
+    <div class="callout warn"><b class="title">⚠️ Beginner trap</b>Unboxing a <code class="inline">null</code> wrapper (e.g. <code class="inline">int x = map.get(missingKey);</code>) throws <code class="inline">NullPointerException</code> — there’s nothing in the box to unpack!</div>
+  </section>
+
+  <!-- 13 COMPLEXITY -->
+  <section id="complexity">
+    <span class="eyebrow">Section 13 · Performance intuition</span>
+    <h2>Speed at a glance ⏱️</h2>
+    <p>Your checklist asked for <b>time/space complexity of the operations your problem uses most</b>. Here’s the practical intuition (average case; <i>n</i> = number of elements):</p>
+    <div id="bars"></div>
+    <div class="callout info"><b class="title">🧠 How to read this</b>
+      <b>O(1)</b> = constant, doesn’t slow as data grows 🏎️ · <b>O(log n)</b> = grows very slowly (trees) 🚗 · <b>O(n)</b> = scans/shuffles everything 🚶<br>
+      Rule of thumb: need fast lookups by key/identity → hash-based (O(1)); need everything always sorted → tree-based (O(log n)); need fast get-by-index → ArrayList.</div>
+  </section>
+
+  <!-- 14 CHEAT SHEET -->
+  <section id="cheatsheet">
+    <span class="eyebrow">Section 14 · Keep forever</span>
+    <h2>Master cheat-sheet ⚡</h2>
+    <div class="controls"><span>🔎</span><input type="search" id="cheatSearch" placeholder="Filter… try “sorted”, “thread”, “null”, “duplicate”" style="flex:1;min-width:220px"><span class="small muted" id="cheatCount"></span></div>
+    <div style="overflow-x:auto">
+    <table id="cheatTable">
+      <thead><tr><th>Implementation</th><th>Family</th><th>Duplicates?</th><th>Order</th><th>Nulls?</th><th>Thread-safe?</th><th>Reach for it when…</th></tr></thead>
+      <tbody>
+        <tr><td><b>ArrayList</b> ⭐</td><td>List</td><td><span class="pill yes">Yes</span></td><td>Insertion</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Default list; fast get by index</td></tr>
+        <tr><td><b>LinkedList</b></td><td>List / Queue / Deque</td><td><span class="pill yes">Yes</span></td><td>Insertion</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Frequent insert/delete at ends; queue duties</td></tr>
+        <tr><td><b>Vector</b></td><td>List</td><td><span class="pill yes">Yes</span></td><td>Insertion</td><td><span class="pill yes">Yes</span></td><td><span class="pill yes">Yes</span></td><td>Legacy thread-safe list (slower)</td></tr>
+        <tr><td><b>HashSet</b> ⭐</td><td>Set</td><td><span class="pill no">No</span></td><td>None</td><td><span class="pill mid">One null</span></td><td><span class="pill no">No</span></td><td>Fast uniqueness + contains() checks</td></tr>
+        <tr><td><b>LinkedHashSet</b></td><td>Set</td><td><span class="pill no">No</span></td><td>Insertion</td><td><span class="pill mid">One null</span></td><td><span class="pill no">No</span></td><td>Unique + predictable visiting order</td></tr>
+        <tr><td><b>TreeSet</b></td><td>Set (sorted)</td><td><span class="pill no">No</span></td><td><b>Sorted</b></td><td><span class="pill no">No</span></td><td><span class="pill no">No</span></td><td>Unique and always in sorted order</td></tr>
+        <tr><td><b>HashMap</b> ⭐</td><td>Map</td><td>Keys: <span class="pill no">No</span> · Values: yes</td><td>None</td><td><span class="pill mid">One null key</span></td><td><span class="pill no">No</span></td><td>Default key→value lookup; counting things</td></tr>
+        <tr><td><b>LinkedHashMap</b></td><td>Map</td><td>Keys: <span class="pill no">No</span></td><td>Insertion</td><td><span class="pill mid">One null key</span></td><td><span class="pill no">No</span></td><td>Map that remembers entry order (caches!)</td></tr>
+        <tr><td><b>TreeMap</b></td><td>Map (sorted)</td><td>Keys: <span class="pill no">No</span></td><td><b>Sorted by key</b></td><td><span class="pill no">No null key</span></td><td><span class="pill no">No</span></td><td>Keys must stay sorted / range queries</td></tr>
+        <tr><td><b>Hashtable</b></td><td>Map</td><td>Keys: <span class="pill no">No</span></td><td>None</td><td><span class="pill no">No nulls</span></td><td><span class="pill yes">Yes</span></td><td>Legacy thread-safe map (prefer ConcurrentHashMap)</td></tr>
+        <tr><td><b>ConcurrentHashMap</b></td><td>Map</td><td>Keys: <span class="pill no">No</span></td><td>None</td><td><span class="pill no">No nulls</span></td><td><span class="pill yes">Yes ⭐</span></td><td>Many threads reading/writing a map</td></tr>
+        <tr><td><b>ArrayDeque</b> ⭐</td><td>Deque / Stack / Queue</td><td><span class="pill yes">Yes</span></td><td>FIFO or LIFO (your choice)</td><td><span class="pill no">No</span></td><td><span class="pill no">No</span></td><td>Modern stack &amp; queue in one class</td></tr>
+        <tr><td><b>PriorityQueue</b></td><td>Queue</td><td><span class="pill yes">Yes</span></td><td>By priority</td><td><span class="pill no">No</span></td><td><span class="pill no">No</span></td><td>Always process most-urgent first</td></tr>
+        <tr><td><b>ArrayBlockingQueue</b></td><td>Queue</td><td><span class="pill yes">Yes</span></td><td>FIFO</td><td><span class="pill no">No</span></td><td><span class="pill yes">Yes</span></td><td>Producer–consumer with fixed capacity</td></tr>
+        <tr><td><b>Stack</b> (legacy)</td><td>Stack (LIFO)</td><td><span class="pill yes">Yes</span></td><td>LIFO</td><td><span class="pill yes">Yes</span></td><td><span class="pill yes">Yes</span></td><td>Old code; new code → ArrayDeque</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="callout ok"><b class="title">📌 Pin this next to your desk</b>ArrayList · HashSet · HashMap answer 80% of everyday needs. Add “Linked” for insertion order, “Tree” for sorted, “Concurrent” for threads.</div>
+  </section>
+
+  <!-- 15 FLASHCARDS -->
+  <section id="flash">
+    <span class="eyebrow">Section 15 · Active recall</span>
+    <h2>Flashcards — click to flip 🃏</h2>
+    <p class="muted">Say the answer out loud <i>before</i> flipping. That’s what makes it stick.</p>
+    <div class="grid g3" id="flashGrid"></div>
+  </section>
+
+  <!-- 16 QUIZ -->
+  <section id="quiz">
+    <span class="eyebrow">Section 16 · Check yourself</span>
+    <h2>The 10-question quiz 🎯</h2>
+    <p class="muted">Instant feedback with explanations. Aim for 8+ before an interview!</p>
+    <div id="quizBox"></div>
+    <div class="scorebar"><span id="scoreText">Score: 0 / 10</span><button class="btn btn-sm" onclick="resetQuiz()">↻ Restart quiz</button></div>
+  </section>
+
+  <!-- 17 INTERVIEW -->
+  <section id="interview">
+    <span class="eyebrow">Section 17 · Land the job</span>
+    <h2>Explain it in 60 seconds 🎤</h2>
+    <div class="grid g2">
+      <div class="card"><h4>“What is the Collections Framework?”</h4><p class="small">“It’s Java’s unified set of <b>interfaces</b> (List, Set, Map, Queue), ready-made <b>implementations</b> (ArrayList, HashSet, HashMap…) and <b>algorithms</b> (sort, binarySearch). It reduces effort and bugs, and promotes reuse. I choose an implementation by asking: duplicates? ordering/sorting? key–value? FIFO/LIFO? thread safety? and the complexity of my most common operations.”</p></div>
+      <div class="card"><h4>“equals() vs hashCode()?” ⭐</h4><p class="small">“<code class="inline">equals()</code> defines <b>business equality</b> — whether two objects represent the same thing; <code class="inline">==</code> only checks they’re the same object in memory. <code class="inline">hashCode()</code> picks the <b>bucket</b> in hash-based collections. The contract: <b>equal objects must have equal hash codes</b> (using the same fields) — break it and HashMap/HashSet lose your objects. And <code class="inline">compareTo()</code> is for <b>ordering</b> in TreeSet/TreeMap, where 0 also means ‘duplicate’.”</p></div>
+      <div class="card"><h4>“ArrayList vs LinkedList?”</h4><p class="small">“ArrayList wraps an array: <b>O(1) get by index</b>, slower mid-list inserts. LinkedList is a node chain: cheap inserts once you’re there, but <b>O(n) to reach an index</b>. Default: ArrayList.”</p></div>
+      <div class="card"><h4>“HashMap vs TreeMap vs ConcurrentHashMap?”</h4><p class="small">“HashMap: fastest, unordered, one null key, not thread-safe. TreeMap: keys sorted, O(log n). ConcurrentHashMap: the thread-safe choice for concurrent access. LinkedHashMap if I need insertion order.”</p></div>
+    </div>
+    <div class="callout ok" style="margin-top:16px"><b class="title">🎉 You’ve reached the end!</b>Revisit the labs for anything fuzzy, redo the quiz in a few days (spaced repetition!), and keep the cheat-sheet handy while you code. Happy collecting! 🧩</div>
+  </section>
+
+  </main>
+</div>
+
+<p class="foot">Built from your Java Collections class notes · Single self-contained file — share it, print it, keep it forever · <a href="#bigpicture">Back to top ↑</a></p>
+<button class="topbtn" id="topBtn" title="Back to top">↑</button>
+
+<script>
+/* ---------- helpers ---------- */
+const $=id=>document.getElementById(id);
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+/* theme + progress + top */
+$("themeBtn").onclick=()=>document.body.classList.toggle("dark");
+window.addEventListener("scroll",()=>{
+  const h=document.documentElement, p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+  $("progress").style.width=p+"%";
+  $("topBtn").style.display=h.scrollTop>600?"block":"none";
+});
+$("topBtn").onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+/* toc highlight */
+const tocLinks=[...document.querySelectorAll("#toc a[href^='#']")];
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){tocLinks.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id))}})},{rootMargin:"-35% 0px -55% 0px"});
+document.querySelectorAll("main section").forEach(s=>obs.observe(s));
+/* tabs */
+document.querySelectorAll(".tabbtn").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".tabbtn").forEach(x=>x.classList.remove("sel")); b.classList.add("sel");
+  document.querySelectorAll(".tabpanel").forEach(p=>p.classList.remove("show"));
+  $("tab-"+b.dataset.tab).classList.add("show");
+});
+/* copy */
+function copyCode(id,btn){
+  const t=$(id).innerText;
+  const done=()=>{btn.textContent="✅ Copied!";setTimeout(()=>btn.textContent="📋 Copy code",1500)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(done)}else{
+    const ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy")}catch(e){}ta.remove();done();
+  }
+}
+
+/* ================= WIZARD ================= */
+const RESULTS={
+  hashmap:{name:"HashMap",why:"The everyday key→value store: fastest lookups, no ordering promises.",code:'Map<String,Integer> counts = new HashMap<>();',alt:"Need entry order? LinkedHashMap · Sorted keys? TreeMap · Many threads? ConcurrentHashMap"},
+  treemap:{name:"TreeMap",why:"Keys always stay sorted (natural order or your Comparator). Slightly slower: O(log n).",code:'Map<String,Integer> sorted = new TreeMap<>();',alt:"No null keys. Great for range views like subMap()."},
+  linkedhashmap:{name:"LinkedHashMap",why:"HashMap speed + remembers the order entries were inserted.",code:'Map<String,Integer> ordered = new LinkedHashMap<>();',alt:"Also the classic base for simple LRU caches."},
+  concurrenthashmap:{name:"ConcurrentHashMap",why:"The modern thread-safe map — built for many threads at high throughput.",code:'Map<String,Integer> safe = new ConcurrentHashMap<>();',alt:"Null keys/values are not allowed."},
+  arraydequeQueue:{name:"ArrayDeque (as Queue)",why:"Fast, resizable FIFO queue. offer() joins the back, poll() takes the front.",code:'Queue<String> line = new ArrayDeque<>();',alt:"Thread-safe & blocking? ArrayBlockingQueue / LinkedBlockingQueue."},
+  blockingqueue:{name:"ArrayBlockingQueue",why:"Thread-safe, fixed-capacity FIFO — the classic producer–consumer hand-off.",code:'BlockingQueue<Task> q = new ArrayBlockingQueue<>(100);',alt:"Unbounded-ish alternative: LinkedBlockingQueue."},
+  arraydequeStack:{name:"ArrayDeque (as Stack)",why:"The modern LIFO stack: push/pop/peek at the top. Faster than the legacy Stack class.",code:'Deque<String> stack = new ArrayDeque<>();\nstack.push("plate");',alt:"Reading old code? java.util.Stack works the same way (and is thread-safe)."},
+  priorityqueue:{name:"PriorityQueue",why:"Most-urgent-first processing using natural ordering or a Comparator.",code:'PriorityQueue<Task> pq = new PriorityQueue<>();',alt:"Thread-safe version: PriorityBlockingQueue."},
+  priorityblocking:{name:"PriorityBlockingQueue",why:"Thread-safe priority queue for concurrent applications.",code:'BlockingQueue<Task> pq = new PriorityBlockingQueue<>();',alt:"Single thread is fine? Plain PriorityQueue is simpler."},
+  hashset:{name:"HashSet ⭐",why:"Fastest uniqueness: duplicates rejected via hashCode()+equals(). No order.",code:'Set<String> users = new HashSet<>();',alt:"Remember to override equals()+hashCode() correctly for your own classes!"},
+  treeset:{name:"TreeSet",why:"Unique AND always sorted. Duplicates/order decided by compareTo()/Comparator.",code:'Set<String> sorted = new TreeSet<>();',alt:"No nulls. compareTo()==0 counts as a duplicate."},
+  linkedhashset:{name:"LinkedHashSet",why:"Unique members, visited in the order you inserted them.",code:'Set<String> s = new LinkedHashSet<>();',alt:"A touch more memory than HashSet — worth it for predictable order."},
+  concurrentSet:{name:"ConcurrentSkipListSet / CopyOnWriteArraySet",why:"Thread-safe sets: SkipList = sorted + concurrent; CopyOnWrite = read-heavy, rare writes.",code:'Set<String> s = new ConcurrentSkipListSet<>();',alt:"Or wrap: Collections.synchronizedSet(...) — synchronise manually while iterating."},
+  arraylist:{name:"ArrayList ⭐",why:"The default List: dynamic array, O(1) get by index, duplicates & nulls welcome.",code:'List<String> cart = new ArrayList<>();',alt:"Thread-safe? Vector or Collections.synchronizedList(new ArrayList<>())."},
+  linkedlist:{name:"LinkedList",why:"Node chain: cheap insert/delete at the ends, doubles as Queue/Deque. Slow get(i).",code:'List<String> l = new LinkedList<>();',alt:"Measure first — ArrayList wins more often than people expect."}
+};
+const NODES={
+  start:{q:"Do you need to look things up by a unique KEY?",hint:"e.g. studentId → Student, word → count, username → profile",opts:[["🔑 Yes — key → value","mapThread"],["No — just a bunch of items","orderKind"]]},
+  mapThread:{q:"Will several THREADS use this map at the same time?",opts:[["🧵 Yes, it must be thread-safe",{r:"concurrenthashmap"}],["No, single-threaded is fine","mapSorted"]]},
+  mapSorted:{q:"Must the KEYS stay SORTED at all times?",opts:[["🔤 Yes, sorted keys",{r:"treemap"}],["No","mapOrder"]]},
+  mapOrder:{q:"Do you care about visiting entries in INSERTION order?",opts:[["↪️ Yes, keep my order",{r:"linkedhashmap"}],["🎲 No, any order is fine",{r:"hashmap"}]]},
+  orderKind:{q:"Is the ORDER OF PROCESSING the whole point?",opts:[["🧍 First come, first served (FIFO)","fifoThread"],["🥞 Last in, first out (LIFO) — like undo",{r:"arraydequeStack"}],["🚑 Most urgent first (priority)","prioThread"],["🙂 Not really — it’s just storage","dup"]]},
+  fifoThread:{q:"Thread-safe / blocking hand-off between threads?",hint:"Classic producer–consumer setup",opts:[["🧵 Yes",{r:"blockingqueue"}],["No",{r:"arraydequeQueue"}]]},
+  prioThread:{q:"Must the priority queue be thread-safe?",opts:[["🧵 Yes",{r:"priorityblocking"}],["No",{r:"priorityqueue"}]]},
+  dup:{q:"Should DUPLICATES be automatically rejected?",opts:[["🚫 Yes — every item unique","setSorted"],["✅ No — duplicates are fine","listAccess"]]},
+  setSorted:{q:"Must the unique items stay SORTED?",opts:[["🔤 Yes, sorted",{r:"treeset"}],["No","setThread"]]},
+  setThread:{q:"Will several THREADS share this set?",opts:[["🧵 Yes",{r:"concurrentSet"}],["No","setOrder"]]},
+  setOrder:{q:"Do you care about INSERTION order when visiting?",opts:[["↪️ Yes",{r:"linkedhashset"}],["🎲 No — speed first",{r:"hashset"}]]},
+  listAccess:{q:"What will you do MOST often?",opts:[["🎯 Get items by index / random access",{r:"arraylist"}],["✂️ Insert & delete in the middle / at ends",{r:"linkedlist"}]]}
+};
+let wizHist=[];
+function wizRender(nodeId){
+  const w=$("wizard");
+  if(nodeId&&nodeId.r){
+    const R=RESULTS[nodeId.r];
+    w.innerHTML=`<div class="wcrumb">Your path: ${wizHist.map(h=>esc(h)).join(" → ")||"—"}</div>
+    <div class="wresult"><div class="small" style="font-weight:800">🏆 RECOMMENDED</div><div class="rec">${R.name}</div>
+    <p>${R.why}</p><pre>${esc(R.code)}</pre><p class="small muted">💡 ${R.alt}</p></div>
+    <div class="controls"><button class="btn btn-brand btn-sm" onclick="wizRestart()">↻ Start over</button>
+    <button class="btn btn-outline btn-sm" onclick="wizBack()">← Back one step</button></div>`;
+    w.dataset.result=nodeId.r; return;
+  }
+  const n=NODES[nodeId||"start"]; w.dataset.node=nodeId||"start";
+  w.innerHTML=`<div class="wcrumb">Step ${wizHist.length+1}${wizHist.length?" · so far: "+wizHist.map(esc).join(" → "):""}</div>
+  <div class="wq">${n.q}</div>${n.hint?`<p class="small muted">${n.hint}</p>`:""}
+  <div class="wopts">${n.opts.map((o,i)=>`<button class="wopt" onclick="wizPick(${i})">${o[0]}</button>`).join("")}</div>
+  <div class="controls">${wizHist.length?`<button class="btn btn-outline btn-sm" onclick="wizBack()">← Back</button><button class="btn btn-outline btn-sm" onclick="wizRestart()">↻ Restart</button>`:""}</div>`;
+}
+let wizStack=["start"];
+function wizPick(i){
+  const cur=wizStack[wizStack.length-1], opt=NODES[cur].opts[i];
+  wizHist.push(opt[0].replace(/^[^\w]+/,"").slice(0,28));
+  if(typeof opt[1]==="string"){wizStack.push(opt[1]);wizRender(opt[1])}else{wizRender(opt[1])}
+}
+function wizBack(){
+  if($("wizard").dataset.result){delete $("wizard").dataset.result;wizHist.pop();wizRender(wizStack[wizStack.length-1]);return}
+  if(wizStack.length>1){wizStack.pop();wizHist.pop();wizRender(wizStack[wizStack.length-1])}
+}
+function wizRestart(){wizHist=[];wizStack=["start"];delete $("wizard").dataset.result;wizRender("start")}
+wizRender("start");
+
+/* ================= EQUALS LAB ================= */
+function simpleHash(name,age){let h=0;const s=name+"|"+age;for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))>>>0}return h}
+function runEquals(){
+  const n1=$("p1name").value.trim()||"(no name)",a1=+$("p1age").value||0;
+  const n2=$("p2name").value.trim()||"(no name)",a2=+$("p2age").value||0;
+  const id1=1836019247,id2=1829164700;
+  const eq=(n1===n2&&a1===a2), hc1=simpleHash(n1,a1), hc2=simpleHash(n2,a2), sameHash=hc1===hc2;
+  $("memrow").innerHTML=`
+   <div class="mem"><b>p1</b> → <span class="addr">object @${id1}</span><br>Person(name="${esc(n1)}", age=${a1})<br><span class="small muted">p3 also points HERE (p3 = p1)</span></div>
+   <div class="mem"><b>p2</b> → <span class="addr">object @${id2}</span><br>Person(name="${esc(n2)}", age=${a2})<br><span class="small muted">a brand-new object (new Person())</span></div>`;
+  const v=(label,val,sub)=>`<div class="v"><span class="small muted">${label}</span><b class="big ${val}">${val}</b><span class="small">${sub}</span></div>`;
+  $("verdict").innerHTML=
+    v("p1 == p2","false","different objects in memory")+
+    v("p1 == p3","true","literally the same object")+
+    v("p1.equals(p2)",String(eq),eq?"same name + age = business-equal ✅":"fields differ, so not equal")+
+    v("p1.hashCode()",hc1,"from name + age")+
+    v("p2.hashCode()",hc2,sameHash?"matches p1 — contract held ✅":"differs (objects not equal — that's allowed)")+
+    v("identity p1 / p3",id1,"identityHashCode: same object, same number");
+  $("equalsLog").textContent=
+`p1 == p2            → false   (different memory objects)
+p1 == p3            → true    (p3 = p1, same object)
+p1.equals(p2)       → ${eq}   (${eq?"same fields":"different fields"})
+p1.hashCode() == p2.hashCode() → ${sameHash}
+${eq&&sameHash?"✅ Contract check: equals=true AND hashCodes match. HashSet/HashMap will behave!":eq?"":"ℹ️ Not equal, so hashCodes may or may not match — both are legal."}`;
+}
+runEquals();
+
+/* ================= BUCKET LAB ================= */
+let bucketItems=[]; // {name,age,bucket,id}
+let bucketSeq=0;
+function bucketOf(name,age,broken,id){return broken? (id*3+1)%8 : simpleHash(name,age)%8}
+function bucketRender(msg){
+  const b=Array.from({length:8},()=>[]);
+  bucketItems.forEach(it=>b[it.bucket].push(it));
+  $("buckets").innerHTML=b.map((items,i)=>`<div class="bucket"><b>BUCKET ${i}</b>${items.map(it=>`<span class="it">${esc(it.name)}, ${it.age}</span>`).join("")||'<div class="small muted">empty</div>'}</div>`).join("");
+  if(msg)$("bucketLog").textContent=msg;
+}
+function bucketAdd(){
+  const name=$("bkName").value.trim()||"Priya", age=+$("bkAge").value||0, broken=$("breakContract").checked;
+  const id=++bucketSeq, bk=bucketOf(name,age,broken,id);
+  const dup=bucketItems.find(it=>it.bucket===bk&&it.name===name&&it.age===age);
+  if(dup){bucketRender(`add(Person("${name}",${age})) → bucket ${bk}\n❌ REJECTED: an equal object is already in bucket ${bk} (equals() said "same person"). add() returns false. Size stays ${bucketItems.length}.`);return}
+  bucketItems.push({name,age,bucket:bk,id});
+  const hiddenDup=bucketItems.filter(it=>it.name===name&&it.age===age).length>1;
+  bucketRender(`add(Person("${name}",${age})) → hashCode ${broken?"(identity-based ☠️)":""}→ bucket ${bk}\n✅ Stored. Size = ${bucketItems.length}.${hiddenDup?"\n⚠️ WAIT — an equal person already exists in ANOTHER bucket! Broken hashCode sent this copy elsewhere, so the set now wrongly holds a duplicate. This is the bug the contract prevents!":""}`);
+}
+function bucketFind(){
+  const name=$("bkName").value.trim()||"Priya", age=+$("bkAge").value||0, broken=$("breakContract").checked;
+  const probeId=999, bk=bucketOf(name,age,broken,probeId);
+  const found=bucketItems.some(it=>it.bucket===bk&&it.name===name&&it.age===age);
+  const existsSomewhere=bucketItems.some(it=>it.name===name&&it.age===age);
+  bucketRender(found?`contains(Person("${name}",${age})) → looks ONLY in bucket ${bk} … ✅ FOUND (equals matches).`:
+    existsSomewhere?`contains(Person("${name}",${age})) → looks ONLY in bucket ${bk} … ❌ NOT FOUND!\n☠️ But the person IS in the set — in a different bucket. With a broken hashCode, lookups search the wrong bucket and your object is effectively LOST.`:
+    `contains(Person("${name}",${age})) → looks in bucket ${bk} … not there. (Add them first!)`);
+}
+function bucketReset(){bucketItems=[];bucketSeq=0;bucketRender("Buckets cleared.")}
+bucketRender();
+
+/* ================= ARRAYLIST LAB ================= */
+let al=[], alCap=4;
+function alRender(msg){
+  while(alCap<al.length)alCap*=2;
+  let html=al.map((x,i)=>`<div class="cell"><div class="box">${x===null?"null":esc(x)}</div><div class="idx">index ${i}</div></div>`).join("");
+  for(let i=al.length;i<alCap;i++)html+=`<div class="cell"><div class="box empty">empty</div><div class="idx">slot ${i}</div></div>`;
+  $("alBoxes").innerHTML=html||"";
+  $("alMeta").innerHTML=`<b>size()</b> = ${al.length} &nbsp;·&nbsp; simulated backing-array <b>capacity</b> = ${alCap} &nbsp;·&nbsp; list = [${al.map(x=>x===null?"null":esc(x)).join(", ")}]`;
+  if(msg)$("alLog").textContent=msg;
+}
+function alAdd(){
+  const raw=$("alVal").value; const v=raw===""?null:raw;
+  const grew=al.length>=alCap;
+  al.push(v); $("alVal").value="";
+  alRender(`list.add(${v===null?"null":'"'+v+'"'}) → added at index ${al.length-1}. size=${al.length}${grew?"\n📦 Array was FULL → a new, bigger array was created and elements copied over (capacity doubled).":""}${v!==null&&al.filter(x=>x===v).length>1?"\nℹ️ Duplicate allowed — Lists welcome repeats!":""}`);
+}
+function alGet(){
+  const i=+$("alIdx").value;
+  alRender(al[i]!==undefined?`list.get(${i}) → ${al[i]===null?"null":'"'+al[i]+'"'}  (direct jump to index — O(1) 🏎️)`:`list.get(${$("alIdx").value}) → 💥 IndexOutOfBoundsException! (size is ${al.length})`);
+}
+function alRemoveIdx(){
+  const i=+$("alIdx").value;
+  if(al[i]===undefined){alRender(`remove(${$("alIdx").value}) → 💥 IndexOutOfBoundsException!`);return}
+  const[r]=al.splice(i,1);
+  alRender(`list.remove(${i}) → removed "${r}". Everyone after it shuffles one step left. size=${al.length}`);
+}
+function alExample(){al=["apple","banana","apple",null,"cherry"];alCap=4;alRender('Example loaded: ["apple","banana","apple",null,"cherry"]\nNotice: duplicate "apple" ✅ · null ✅ · insertion order kept ✅')}
+function alClear(){al=[];alCap=4;alRender("list.clear() → size = 0")}
+alExample();
+
+/* ================= STACK / QUEUE / PQ ================= */
+let stack=[],queue=[],pq=[],counters={s:0,q:0};
+function stRender(m){$("stVis").innerHTML=stack.length?stack.map(x=>`<div class="plate">${esc(x)}</div>`).join("")+`<div class="small muted">▲ TOP (next pop) · bottom of stack ▼</div>`:'<span class="muted">— empty —</span>';if(m)$("stLog").textContent=m}
+function stPush(){const v=$("stVal").value.trim()||("plate-"+(++counters.s));stack.push(v);$("stVal").value="";stRender(`push("${v}") → placed on TOP. Stack top→bottom: [${[...stack].reverse().join(", ")}]`)}
+function stPop(){const v=stack.pop();stRender(v===undefined?"pop() → 💥 EmptyStackException!":`pop() → removed "${v}" — the LAST one in is the FIRST one out (LIFO).`)}
+function stPeek(){stRender(stack.length?`peek() → "${stack[stack.length-1]}" is on top (nothing removed).`:"peek() → 💥 EmptyStackException!")}
+stRender();
+function qRender(m){$("qVis").innerHTML=queue.length?queue.map((x,i)=>`<div class="cell"><div class="box teal">${esc(x)}</div><div class="idx">${i===0?"FRONT":i===queue.length-1?"REAR":""}</div></div>`).join(""):'<span class="muted">— nobody in line —</span>';if(m)$("qLog").textContent=m}
+function qOffer(){const v=$("qVal").value.trim()||("job-"+(++counters.q));queue.push(v);$("qVal").value="";qRender(`offer("${v}") → joined at the REAR. Line: ${queue.join(" → ")}`)}
+function qPoll(){const v=queue.shift();qRender(v===undefined?"poll() → null (queue empty — poll is the polite one, remove() would throw).":`poll() → served "${v}" from the FRONT — first in, first out (FIFO).`)}
+function qPeek(){qRender(queue.length?`peek() → "${queue[0]}" is next (still in line).`:"peek() → null (empty).")}
+qRender();
+function pqRender(m){
+  const sorted=[...pq].sort((a,b)=>a.prio-b.prio||a.seq-b.seq);
+  $("pqVis").innerHTML=sorted.length?sorted.map((x,i)=>`<div class="cell"><div class="box ${x.prio===1?"pink":x.prio===2?"orange":""}">${esc(x.name)}<br><span style="font-size:.72rem">priority ${x.prio}</span></div><div class="idx">${i===0?"NEXT ⬅":""}</div></div>`).join(""):'<span class="muted">— waiting room empty —</span>';
+  if(m)$("pqLog").textContent=m;
+}
+let pqSeq=0;
+function pqAdd(){const n=$("pqName").value.trim()||"Patient-"+(++pqSeq);const p=+$("pqPrio").value;pq.push({name:n,prio:p,seq:pqSeq++});$("pqName").value="";pqRender(`offer("${n}", priority ${p}) → waiting room re-orders by urgency, not arrival.`)}
+function pqPoll(){
+  if(!pq.length){pqRender("poll() → null (nobody waiting).");return}
+  pq.sort((a,b)=>a.prio-b.prio||a.seq-b.seq);const v=pq.shift();
+  pqRender(`poll() → treating "${v.name}" (priority ${v.prio}) — most urgent first, even if they arrived later!`);
+}
+function pqExample(){pq=[{name:"Sam",prio:3,seq:1},{name:"Riya",prio:1,seq:2},{name:"Tom",prio:2,seq:3},{name:"Ana",prio:3,seq:4}];pqSeq=5;pqRender('Arrival order was Sam(3), Riya(1), Tom(2), Ana(3) — but poll() order will be Riya → Tom → Sam → Ana. Try it!')}
+pqRender();
+
+/* ================= SET LAB ================= */
+let setItems=[];
+document.querySelectorAll("#setMode label").forEach(l=>l.addEventListener("click",()=>{
+  document.querySelectorAll("#setMode label").forEach(x=>x.classList.remove("sel"));l.classList.add("sel");
+  setTimeout(()=>setRender(`Switched implementation — same members, new visiting order. Mode: ${getSetMode()}`),10);
+}));
+function getSetMode(){return document.querySelector("input[name=setmode]:checked").value}
+function hashScramble(arr){return [...arr].sort((a,b)=>simpleHash(a,0)%97-simpleHash(b,0)%97)}
+function setRender(m){
+  const mode=getSetMode();
+  let disp = mode==="hash"?hashScramble(setItems): mode==="tree"?[...setItems].sort() : [...setItems];
+  const cls = mode==="tree"?"teal":mode==="linked"?"orange":"";
+  $("setVis").innerHTML=disp.length?disp.map(x=>`<div class="cell"><div class="box ${cls}">${esc(x)}</div></div>`).join(""):'<span class="muted">— empty set —</span>';
+  if(m)$("setLog").textContent=m+`\nCurrent set (${mode}) visiting order: {${disp.join(", ")}} · size=${setItems.length}`;
+}
+function setAddOne(v){
+  if(setItems.includes(v))return false;
+  setItems.push(v);return true;
+}
+function setAdd(){
+  const v=$("setVal").value.trim(); if(!v){setRender("Type a value first!");return}
+  const ok=setAddOne(v);$("setVal").value="";
+  setRender(ok?`add("${v}") → ✅ true (stored)`:`add("${v}") → ❌ false — DUPLICATE rejected! ${getSetMode()==="tree"?"compareTo() returned 0 against the existing element.":"hashCode() led to the same bucket and equals() matched."} The set is unchanged.`);
+}
+function setExample(){
+  const logs=[];
+  ["banana","apple","banana","cherry"].forEach(v=>logs.push(`add("${v}") → ${setAddOne(v)}`));
+  setRender(logs.join(" · ")+`\n4 adds, only 3 members — the second "banana" was refused. Flip between HashSet / LinkedHashSet / TreeSet above to compare order!`);
+}
+function setClear(){setItems=[];setRender("clear() → size = 0")}
+setRender();
+
+/* ================= MAP LAB ================= */
+let theMap=new Map();
+function mapRender(m){
+  $("mapVis").innerHTML=theMap.size?[...theMap.entries()].map(([k,v])=>`<div class="kv"><div class="kk">${esc(k)}</div><div class="arrow">➜</div><div class="vv">${esc(v)}</div></div>`).join(""):'<span class="muted">— map is empty —</span>';
+  if(m)$("mapLog").textContent=m;
+}
+function mapPut(){
+  const k=$("mapKey").value.trim(), v=$("mapVal").value.trim();
+  if(!k){mapRender("Type a KEY first!");return}
+  const had=theMap.has(k), old=theMap.get(k);
+  theMap.set(k,v||"(empty)");
+  mapRender(had?`put("${k}","${v}") → key already existed! Old value "${old}" OVERWRITTEN. (put returns the old value.) Size still ${theMap.size}.`:`put("${k}","${v}") → new entry stored. Size=${theMap.size}.`);
+}
+function mapGet(){const k=$("mapKey").value.trim();mapRender(theMap.has(k)?`get("${k}") → "${theMap.get(k)}"`:`get("${k}") → null (key not present — beware unboxing this into an int! 💥)`)}
+function mapRemove(){const k=$("mapKey").value.trim();const had=theMap.delete(k);mapRender(had?`remove("${k}") → entry deleted. Size=${theMap.size}.`:`remove("${k}") → nothing to delete (returned null).`)}
+function mapExample(){
+  theMap=new Map();
+  for(const ch of "banana"){if("aeiou".includes(ch))theMap.set(ch,(+theMap.get(ch)||0)+1)}
+  mapRender('Counted vowels in "banana": for each vowel → map.put(vowel, count+1).\nResult: {a=3} … only "a" appears. Try put("a", 99) to overwrite it!');
+}
+function mapClear(){theMap.clear();mapRender("map.clear() → size = 0")}
+mapRender();
+
+/* ================= COMPLEXITY BARS ================= */
+const barsData=[
+ ["ArrayList — get(index)","O(1)",8,"#22c55e"],["HashMap / HashSet — get, put, contains (avg)","O(1)",10,"#22c55e"],
+ ["ArrayList — add at end (avg)","O(1)",14,"#22c55e"],["TreeMap / TreeSet — get, put, contains","O(log n)",35,"#eab308"],
+ ["PriorityQueue — peek (next priority)","O(1)",8,"#22c55e"],["PriorityQueue — offer / poll","O(log n)",35,"#eab308"],
+ ["LinkedList — get(index)","O(n)",85,"#ef4444"],["ArrayList — insert/remove in middle","O(n)",75,"#ef4444"],
+ ["Any List — contains(value) unsorted scan","O(n)",80,"#ef4444"]
+];
+$("bars").innerHTML=barsData.map(b=>`<div class="bar-row"><div class="lbl">${b[0]}</div><div class="bar-track"><div class="bar-fill" style="width:${b[2]}%;background:${b[3]}"></div></div><b>${b[1]}</b></div>`).join("")+`<p class="small muted">Shorter bar ≈ stays fast as data grows. (Schematic, not to scale — hash operations are O(1) on average, worst case can degrade with many collisions.)</p>`;
+
+/* ================= CHEAT FILTER ================= */
+function cheatFilter(){
+  const q=$("cheatSearch").value.toLowerCase();let n=0;
+  document.querySelectorAll("#cheatTable tbody tr").forEach(tr=>{const show=tr.innerText.toLowerCase().includes(q);tr.style.display=show?"":"none";if(show)n++});
+  $("cheatCount").textContent=n+" rows shown";
+}
+$("cheatSearch").addEventListener("input",cheatFilter);cheatFilter();
+
+/* ================= FLASHCARDS ================= */
+const FLASH=[
+ ["List vs Set — the one difference?","Duplicates! List allows them (and has an index); Set rejects them."],
+ ["Which methods decide duplicates in a HashSet?","hashCode() picks the bucket, then equals() checks for a match inside it."],
+ ["State the equals/hashCode contract","If a.equals(b) is true → a.hashCode() MUST equal b.hashCode(). (Reverse not required.)"],
+ ["== vs equals()?","== → same object in memory (reference). equals() → same meaning/content (business equality)."],
+ ["FIFO vs LIFO — which structures?","FIFO = Queue (first in, first out). LIFO = Stack (last in, first out)."],
+ ["Why is List<int> illegal?","Collections + generics work with objects only; primitives aren't Objects. Use List<Integer> (autoboxing)."],
+ ["HashMap: put the same key twice?","No duplicate keys — the second put OVERWRITES the first value (and returns it)."],
+ ["Thread-safe Map — modern answer?","ConcurrentHashMap. (Hashtable & synchronizedMap are the older, slower options.)"],
+ ["TreeSet thinks two elements are 'the same' when…?","compareTo() (or the Comparator) returns 0 — that's also how it sorts."]
+];
+$("flashGrid").innerHTML=FLASH.map(f=>`<div class="flash" onclick="this.classList.toggle('flip')"><div class="flash-in"><div class="face front"><div>${f[0]}</div><small>click to flip ↻</small></div><div class="face back"><div>${f[1]}</div><small style="color:var(--muted)">click to flip back</small></div></div></div>`).join("");
+
+/* ================= QUIZ ================= */
+const QUIZ=[
+ {q:"1. You need an ordered collection with duplicates allowed and fast access by index. Pick:",o:["HashSet","ArrayList","TreeMap","PriorityQueue"],a:1,e:"ArrayList = dynamic array: insertion order, duplicates OK, get(i) is O(1)."},
+ {q:"2. A HashSet decides that your new object is a duplicate using…",o:["== only","compareTo() only","hashCode() to find the bucket, then equals()","toString()"],a:2,e:"Hash-based collections bucket by hashCode() first, then confirm with equals()."},
+ {q:"3. If a.equals(b) returns true, what MUST also be true?",o:["a == b","a.hashCode() == b.hashCode()","a.compareTo(b) > 0","Nothing else"],a:1,e:"That's the contract. Same hash code is mandatory for equal objects (but equal hash codes alone don't imply equality)."},
+ {q:"4. TreeSet sorts elements and detects duplicates using…",o:["hashCode()","equals()","compareTo() / Comparator (0 ⇒ duplicate)","Memory address"],a:2,e:"Tree-based collections never call equals/hashCode for this — ordering does both jobs."},
+ {q:'5. String a = new String("hi"); String b = new String("hi"); — what is a == b?',o:["true","false"],a:1,e:"Two separate objects in memory, so == is false — even though a.equals(b) is true."},
+ {q:"6. A printer processes jobs strictly in arrival order. Best ADT?",o:["Stack (LIFO)","Queue (FIFO)","Set","Map"],a:1,e:"First In, First Out = Queue: offer() at the rear, poll() from the front."},
+ {q:'7. map.put("a",1); map.put("a",2); — what does map.get("a") return, and what is the size?',o:["1, size 2","2, size 1","Error — duplicate key","null, size 0"],a:1,e:"Keys are unique: the second put overwrites. One entry, value 2."},
+ {q:"8. Why can't you write List<int>?",o:["int is a reserved word","Generics/collections store objects; int is a primitive, not an Object","Lists only hold Strings","It works fine actually"],a:1,e:"Use List<Integer> — autoboxing converts int ↔ Integer automatically (type erasure also requires Object types)."},
+ {q:"9. Best modern choice for a Map shared by many threads:",o:["HashMap","Hashtable","ConcurrentHashMap","TreeMap"],a:2,e:"ConcurrentHashMap is designed for high-throughput concurrent use. Hashtable is the legacy, slower option."},
+ {q:"10. Which snippet shows INTERNAL iteration?",o:["for (int i=0;i<list.size();i++) …","while (it.hasNext()) …","list.stream().map(...).forEach(...)","for (String s : list) …"],a:2,e:"With streams you state WHAT to do; the library drives the traversal — that's internal iteration (Java 8+)."}
+];
+let answered=new Array(QUIZ.length).fill(false), correctFlags=new Array(QUIZ.length).fill(false);
+function renderQuiz(){
+  $("quizBox").innerHTML=QUIZ.map((it,qi)=>`<div class="quiz-q"><h4>${esc(it.q)}</h4>
+   ${it.o.map((o,oi)=>`<button class="qopt" id="q${qi}o${oi}" onclick="answerQ(${qi},${oi})">${String.fromCharCode(65+oi)}. ${esc(o)}</button>`).join("")}
+   <div class="qexp" id="qexp${qi}"><div class="callout info" style="margin:0"><b class="title">💡 Explanation</b>${esc(it.e)}</div></div></div>`).join("");
+  updateScore();
+}
+function answerQ(qi,oi){
+  if(answered[qi])return; answered[qi]=true;
+  const it=QUIZ[qi], right=oi===it.a; correctFlags[qi]=right;
+  $("q"+qi+"o"+oi).classList.add(right?"right":"wrong");
+  if(!right)$("q"+qi+"o"+it.a).classList.add("right");
+  $("qexp"+qi).classList.add("show"); updateScore();
+}
+function updateScore(){
+  const done=answered.filter(Boolean).length, score=correctFlags.filter(Boolean).length;
+  let msg=`Score: ${score} / ${QUIZ.length} · answered ${done}/${QUIZ.length}`;
+  if(done===QUIZ.length)msg+=score>=8?" · 🏆 Interview-ready!":score>=5?" · 💪 Good — revisit the explanations above.":" · 🌱 Keep going — replay the labs and try again!";
+  $("scoreText").textContent=msg;
+}
+function resetQuiz(){answered.fill(false);correctFlags.fill(false);renderQuiz();$("quiz").scrollIntoView({behavior:"smooth"})}
+renderQuiz();
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a53cf9962900a20e',t:'MTc5MzU1Nzg3MQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a53cf9962900a20e',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
